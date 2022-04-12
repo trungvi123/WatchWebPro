@@ -23,7 +23,9 @@
     margin-top: 60px;
 }
 
-
+.old__price {
+    text-decoration: line-through;
+}
 /*-------------------------------Product-----------------------------------*/
 
 .row {
