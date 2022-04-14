@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <!-- Trang này là nội dung main của trang index -->
     <div id="demo" class="carousel slide" data-ride="carousel">
@@ -48,20 +49,32 @@
 
     <h2 class="h2_title">ĐỒNG HỒ NAM</h2>
       <section class="row">
-        <div class="col-lg-3 col-sm-6 product__box">
-          <img class="product__img" src="./public/img/product/dongho_louis_erard.jpg" alt="">
-          <div class="product__info">
-            <p class="type">Đồng hồ nam</p>
-            <a class="product__name" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
-            <div class="price__box">
-              <span class="old__price">20,000,000 đ</span>
-              <span class="new__price">18,195,000 đ</span>
+        <?php 
+          while($row = mysqli_fetch_array($data['contentNam'])){
+          echo "
+          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+            <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+            <div class=\"product__info\">
+              <p class=\"type\">{$row['type']}</p>
+              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <div class=\"price__box\">
+              ";
+                if($row['old_price']!= NULL){
+                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
+                }else {
+                  echo "<span class=\"old__price\"></span>";
+                }
+          echo " 
+                <span class=\"new__price\">{$row['new_price']} đ</span>
+              </div>
+            </div>
+            <div class=\"add_cart\">
+              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
             </div>
           </div>
-          <div class="add_cart">
-            <a href=""><i class="add_cart__icon fa-solid fa-cart-plus"></i></a>
-          </div>
-        </div>
+            ";
+          }
+        ?>
       </section>
 
       <section class="row not-mr-lr service">
@@ -90,26 +103,37 @@
       
     <h2 class="h2_title">ĐỒNG HỒ NỮ</h2>
       <section class="row">
-        <div class="col-lg-3 col-sm-6 product__box">
-          <img class="product__img" src="./public/img/product/dongho_louis_erard.jpg" alt="">
-          <div class="product__info">
-            <p class="type">Đồng hồ nam</p>
-            <a class="product__name" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
-            <div class="price__box">
-              <span class="old__price">20,000,000 đ</span>
-              <span class="new__price">18,195,000 đ</span>
+        <?php 
+          while($row = mysqli_fetch_array($data['contentNu'])){
+          echo "
+          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+            <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+            <div class=\"product__info\">
+              <p class=\"type\">{$row['type']}</p>
+              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <div class=\"price__box\">
+              ";
+                if($row['old_price']!= NULL){
+                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
+                }else {
+                  echo "<span class=\"old__price\"></span>";
+                }
+          echo " 
+                <span class=\"new__price\">{$row['new_price']} đ</span>
+              </div>
+            </div>
+            <div class=\"add_cart\">
+              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
             </div>
           </div>
-          <div class="add_cart">
-            <a href=""><i class="add_cart__icon fa-solid fa-cart-plus"></i></a>
-            
-          </div>
-        </div>
+            ";
+          }
+        ?>
       </section>
 
       <section class="banner mt-5">
         <div class="row not-mr-lr">
-          <div class="col-lg-6 banner__item overflow-hidden position-relative p-0">
+          <div class="col-lg-6 col-md-6 banner__item overflow-hidden position-relative p-0">
             <img class="banner__img" src="./public/img/banner/img1.jpg" alt="">
             <div class="banner__text">
               <h3>Romance in the air</h3>
@@ -117,7 +141,7 @@
               <a href="">DETAILS</a>
             </div>
           </div>
-          <div class="col-lg-6 banner__item overflow-hidden position-relative p-0">
+          <div class="col-lg-6 col-md-6  banner__item overflow-hidden position-relative p-0">
             <img class="banner__img" src="./public/img/banner/img2.jpg" alt="">
             <div class="banner__text">
               <h3>Analog & Digital</h3>
@@ -131,50 +155,70 @@
 
       <h2 class="h2_title">ĐỒNG HỒ ĐÔI</h2>
       <section class="row">
-        <div class="col-lg-3 col-sm-6 product__box">
-          <img class="product__img" src="./public/img/product/dongho_louis_erard.jpg" alt="">
-          <div class="product__info">
-            <p class="type">Đồng hồ nam</p>
-            <a class="product__name" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
-            <div class="price__box">
-              <span class="old__price">20,000,000 đ</span>
-              <span class="new__price">18,195,000 đ</span>
+        <?php 
+          while($row = mysqli_fetch_array($data['contentDoi'])){
+          echo "
+          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+            <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+            <div class=\"product__info\">
+              <p class=\"type\">{$row['type']}</p>
+              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <div class=\"price__box\">
+              ";
+                if($row['old_price']!= NULL){
+                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
+                }else {
+                  echo "<span class=\"old__price\"></span>";
+                }
+          echo " 
+                <span class=\"new__price\">{$row['new_price']} đ</span>
+              </div>
+            </div>
+            <div class=\"add_cart\">
+              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
             </div>
           </div>
-          <div class="add_cart">
-            <a href=""><i class="add_cart__icon fa-solid fa-cart-plus"></i></a>
-            
-          </div>
-        </div>
+            ";
+          }
+        ?>
       </section>
 
       <h2 class="h2_title">PHỤ KIỆN</h2>
-      <div class="row">
-        <div class="col-lg-3 col-sm-6 product__box">
-          <img class="product__img" src="./public/img/product/dongho_louis_erard.jpg" alt="">
-          <div class="product__info">
-            <p class="type">Đồng hồ nam</p>
-            <a class="product__name" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
-            <div class="price__box">
-              <span class="old__price">20,000,000 đ</span>
-              <span class="new__price">18,195,000 đ</span>
+      <section class="row">
+        <?php 
+          while($row = mysqli_fetch_array($data['contentPhuKien'])){
+          echo "
+          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+            <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+            <div class=\"product__info\">
+              <p class=\"type\">{$row['type']}</p>
+              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <div class=\"price__box\">
+              ";
+                if($row['old_price']!= NULL){
+                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
+                }else {
+                  echo "<span class=\"old__price\"></span>";
+                }
+          echo " 
+                <span class=\"new__price\">{$row['new_price']} đ</span>
+              </div>
+            </div>
+            <div class=\"add_cart\">
+              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
             </div>
           </div>
-          <div class="add_cart">
-            <a href=""><i class="add_cart__icon fa-solid fa-cart-plus"></i></a>
-            
-          </div>
-        </div>
-        
-      </div>
-
+            ";
+          }
+        ?>
+      </section>
       <h2 class="h2_title">THÔNG TIN HỮU ÍCH</h2>
       <div class="row">
-        <div class="col-lg-3 col-sm-6 product__box">
+        <div class="col-lg-3 col-md-4 col-sm-6 product__box">
           <img class="product__img" src="./public/img/product/dongho_louis_erard.jpg" alt="">
           <div class="product__info">
             <p class="type">Đồng hồ nam</p>
-            <a class="product__name" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
+            <a class="product__name hiden-text" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
             <div class="price__box">
               <span class="old__price">20,000,000 đ</span>
               <span class="new__price">18,195,000 đ</span>

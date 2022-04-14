@@ -2,7 +2,7 @@
     // file này chủ yếu xử lí url và chạy hàm chính xác vs url
     class app {
         protected $controller="home";
-        protected $action="show";
+        protected $action="showSanPham";
         protected $params=[];
 
         function __construct(){

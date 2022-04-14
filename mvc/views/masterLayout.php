@@ -17,7 +17,7 @@
         <?php require_once "./partial/header.php"?>    
     </header>
     <main>
-        <?php require_once "./mvc/views/Pages/home_page.php" ?>
+        <?php require_once "./mvc/views/Pages/".$data['Page'].".php" ?>
     </main>
     
 </body>

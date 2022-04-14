@@ -1,9 +1,8 @@
 <?php 
-    class SanPhamModel extends db{
-        public function showSP(){
-            $query = "SELECT * FROM haha";
-            return mysqli_query($this->con,$query);
-
+    class SanPhamModel extends db_sanPham {
+        public function showSanPham(){
+            $query = "SELECT * FROM sanpham";
+            return mysqli_query($this->con_sanPham,$query);
         }
     }
 
