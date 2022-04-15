@@ -6,7 +6,7 @@
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNu"> ĐỒNG HỒ NỮ </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> ĐỒNG HỒ ĐÔI </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoPhuKien"> PHỤ KIỆN </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/PhuKien"> PHỤ KIỆN </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/contact"> LIÊN HỆ </a> </li>
             </ul>

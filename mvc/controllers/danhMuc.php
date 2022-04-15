@@ -29,4 +29,12 @@ class danhMuc extends controller{
         ]);
     }
 
+    function phuKien (){
+        $this->select = $this->model("sanPhamModel");
+        $this->view("masterLayout1",[
+            "Page" => "select_page",
+            "content" => $this->select -> GetPhuKien()
+        ]);
+    }
+
 }
