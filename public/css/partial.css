@@ -21,14 +21,14 @@ header {
 
 .nav {
     background-color: transparent;
-    height: 90px;
     position: absolute;
     top: 0;
+    height: 100px !important;
     left: 0;
-    z-index: 1;
     width: 100%;
     justify-content: space-evenly;
     display: flex;
+    z-index: 1;
 }
 /*-----------------NAV_LEFT---------------*/
 .logo {

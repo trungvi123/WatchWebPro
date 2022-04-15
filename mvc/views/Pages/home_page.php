@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./public/css/partial.css">
-    <link rel="stylesheet" href="./public/css/home_page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
 
-<body>
-    <!-- Trang này là nội dung main của trang index -->
+
+<main>
+<!-- Trang này là nội dung main của trang index -->
     <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
@@ -27,13 +13,13 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./public/img/slider/slide1.jpg" alt="blancpain">
+                <img src="http://mauweb.monamedia.net/dongho/wp-content/uploads/2018/03/slide1.jpg" alt="blancpain">
               </div>
               <div class="carousel-item">
-                <img src="./public/img/slider/slide2.jpg" alt="">
+                <img src="http://mauweb.monamedia.net/dongho/wp-content/uploads/2018/03/slide2.jpg" alt="">
               </div>
               <div class="carousel-item">
-                <img src="./public/img/slider/slide3.jpg" alt="New York">
+                <img src="http://mauweb.monamedia.net/dongho/wp-content/uploads/2018/03/slide3.jpg" alt="New York">
               </div>
             </div>
           
@@ -212,6 +198,7 @@
           }
         ?>
       </section>
+
       <h2 class="h2_title">THÔNG TIN HỮU ÍCH</h2>
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 product__box">
@@ -231,5 +218,4 @@
         </div>
       </div>
 
-</body>
-</html>
+</main>

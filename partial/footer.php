@@ -1,4 +1,4 @@
-
+<footer class="footer text-white p-5">
         <div class="align">
             <div class="row">
                 <div class="col-sm-4">
@@ -41,3 +41,4 @@
             </center>
             
         </div>
+        </footer>

@@ -1,9 +1,12 @@
 <?php 
 class danhMuc extends controller{
     public $select;
-    function showSanPham(){}
+    public function defauAction(){
+        echo "Nothing!!";
+        // Khi ng dùng k nhập url
+    }
     
-    function dongHoNam (){
+    public function dongHoNam (){
         $this->select = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
             "Page" => "select_page",

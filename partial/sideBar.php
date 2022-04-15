@@ -1,20 +1,21 @@
-<div class="sideBar col-lg-3">
+
                         <aside class="nav_menu-2">
                             <span class="sideBar__title">DANH MỤC SẢN PHẨM</span>
                             <div class="small-line"></div>
                             <div class="menu__box">
                                 <ul class="menu__list">
-                                    <li class="menu__item"><a href=""> Đồng hồ nam </a></li>
-                                    <li class="menu__item"><a href=""> Đồng hồ nữ </a></li>
-                                    <li class="menu__item"><a href=""> Đồng hồ đôi </a></li>
+                                    <li class="menu__item"><a href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> Đồng hồ nam </a></li>
+                                    <li class="menu__item"><a href="http://localhost/WatchWebPro/danhMuc/dongHoNu"> Đồng hồ nữ </a></li>
+                                    <li class="menu__item"><a href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> Đồng hồ đôi </a></li>
                                     <li class="menu__item dropdown " >
-                                        <a href=""> Phụ kiện </a>
+                                        <a href="http://localhost/WatchWebPro/danhMuc/dongHoPhuKien"> Phụ kiện </a>
                                         <div type="button" class="dropdown-toggle" data-toggle="dropdown"></div>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#"> Đồng hồ nam</a>
-                                            <a class="dropdown-item" href="#"> Đồng hồ nữ</a>
-                                            <a class="dropdown-item" href="#"> Đồng hồ đôi</a>
-                                            <a class="dropdown-item" href="#"> Phụ kiện</a>
+                                            <a class="dropdown-item" href=""> Dây Da Hirsch</a>
+                                            <a class="dropdown-item" href=""> Dây Da ZRC</a>
+                                            <a class="dropdown-item" href=""> Hộp Đồng Hồ</a>
+                                            <a class="dropdown-item" href=""> D.Vụ In Logo Lên Đồng Hồ</a>
+                                            <a class="dropdown-item" href=""> Khắc Laser Lên Đồng Hồ</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -125,5 +126,3 @@
                             </div>
                         </aside>
 
-
-                    </div>

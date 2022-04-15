@@ -1,14 +1,14 @@
-
+<header>
         <nav class="nav">
-            <img class="logo" src="./public/img/logo/Logo_main.png" alt="">
+            <img class="logo" src="http://localhost/WatchWebPro/public/img/logo/Logo_main.png" alt="logo">
             <ul class="nav__list">
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=gioithieu"> GIỚI THIỆU </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=donghonam"> ĐỒNG HỒ NAM </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=donghonu"> ĐỒNG HỒ NỮ </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=donghodoi"> ĐỒNG HỒ ĐÔI </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=phukien"> PHỤ KIỆN </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=tintuc"> TIN TỨC </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="index.php?nav=lienhe"> LIÊN HỆ </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/gioithieu"> GIỚI THIỆU </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNu"> ĐỒNG HỒ NỮ </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> ĐỒNG HỒ ĐÔI </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoPhuKien"> PHỤ KIỆN </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/contact"> LIÊN HỆ </a> </li>
             </ul>
             <div class="nav__box-icon">
                 <i class="custom__dropdown nav__icon fa-solid fa-magnifying-glass">
@@ -27,3 +27,4 @@
                 </i>
             </div>
         </nav>
+</header>

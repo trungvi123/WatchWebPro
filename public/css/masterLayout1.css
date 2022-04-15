@@ -6,18 +6,13 @@ main {
 }
 .container__custom {
     height: 5000px;
-    margin: 0px 35px;
-
 }
 
 .mainContent {
-    height: 600px;
     padding: 0 20px;
 }
 
 .sideBar {
-    height: 600px;
-    
     padding: 0 20px;
 }
 
@@ -73,7 +68,9 @@ aside {
     border-top: 1px solid #E5E5E5;
     
 }
-
+.dropdown-toggle {
+    padding: 0 12px;
+}
 .dropdown-menu {
     width: 215px !important;
 }
