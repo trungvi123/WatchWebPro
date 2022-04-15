@@ -46,6 +46,7 @@
              
             call_user_func_array([$this->controller,$this->action],$this->params);
         }
+        
         function url_handle(){
             if(isset($_GET["url"])){
                // cắt các khoảng trắng trên url

@@ -11,7 +11,6 @@ main {
 }
 
 .mainContent {
- 
     height: 600px;
     padding: 0 20px;
 }
@@ -23,13 +22,13 @@ main {
 }
 
 /*----------------------------SIZEBAR------------------------*/
-.sideBar__title {
-    font-weight: 600;
+aside {
+    margin: 20px 0;
 }
 
-.nav_menu-2{
 
-
+.sideBar__title {
+    font-weight: 600;
 }
 
 .small-line{
@@ -65,9 +64,6 @@ main {
     padding: 10px;
 }
 
-
-
-
 .menu__item a {
    color: black; 
    flex: 1;
@@ -78,18 +74,9 @@ main {
     
 }
 
-.menu__box--child  {
-    border: 1px solid #E5E5E5;
-    position: absolute;
-    top: 37px;
-    left: 11px;
-    width: 210px;
-    display: none;
+.dropdown-menu {
+    width: 215px !important;
 }
-
-
-.PhuKien-toggle:hover {
-    transform: rotate(-180deg);
-    transition: all 0.8s linear;
+.dropdown-item {
+    font-size: 13px !important;
 }
-

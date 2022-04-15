@@ -1,8 +1,8 @@
 <?php
 class home extends controller{
     function showSanPham(){
-        $tmp = $this->model("homeModel");
-        $this->view("masterLayout1",[
+        $tmp = $this->model("sanPhamModel");
+        $this->view("masterLayout",[
             "contentNam" => $tmp -> GetDongHoNam(),
             "contentNu" => $tmp -> GetDongHoNu(),
             "contentDoi" => $tmp -> GetDongHoDoi(),

@@ -1,19 +1,29 @@
 <?php 
 class danhMuc extends controller{
+    public $select;
+    function showSanPham(){}
+    
     function dongHoNam (){
-        $nam = $this->model("sanPhamModel");
-        
+        $this->select = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
-            "Page" => "sanPham",
-            "content" => $nam -> showDongHoNam()
+            "Page" => "select_page",
+            "content" => $this->select -> GetDongHoNam()
         ]);
     }
     
     function dongHoNu (){
-        
+        $this->select = $this->model("sanPhamModel");
+        $this->view("masterLayout1",[
+            "Page" => "select_page",
+            "content" => $this->select -> GetDongHoNu()
+        ]);
     }
     function dongHoDoi (){
-        
+        $this->select = $this->model("sanPhamModel");
+        $this->view("masterLayout1",[
+            "Page" => "select_page",
+            "content" => $this->select -> GetDongHoDoi()
+        ]);
     }
 
 }
