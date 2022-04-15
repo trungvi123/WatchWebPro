@@ -2,7 +2,7 @@
 class home extends controller{
     function showSanPham(){
         $tmp = $this->model("homeModel");
-        $this->view("masterLayout",[
+        $this->view("masterLayout1",[
             "contentNam" => $tmp -> GetDongHoNam(),
             "contentNu" => $tmp -> GetDongHoNu(),
             "contentDoi" => $tmp -> GetDongHoDoi(),

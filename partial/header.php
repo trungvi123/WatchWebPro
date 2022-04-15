@@ -1,4 +1,4 @@
-<header>
+
         <nav class="nav">
             <img class="logo" src="./public/img/logo/Logo_main.png" alt="">
             <ul class="nav__list">
@@ -27,4 +27,3 @@
                 </i>
             </div>
         </nav>
-</header>

@@ -1,0 +1,95 @@
+main {
+    padding-top: 100px;
+}
+.nav {
+    background-color: black;
+}
+.container__custom {
+    height: 5000px;
+    margin: 0px 35px;
+
+}
+
+.mainContent {
+ 
+    height: 600px;
+    padding: 0 20px;
+}
+
+.sideBar {
+    height: 600px;
+    
+    padding: 0 20px;
+}
+
+/*----------------------------SIZEBAR------------------------*/
+.sideBar__title {
+    font-weight: 600;
+}
+
+.nav_menu-2{
+
+
+}
+
+.small-line{
+    height: 3px;
+    width: 30px;
+    background-color: #E5E5E5;
+    margin: 15px 0;
+}
+
+.menu__box{
+    border: 1px solid #E5E5E5;
+}
+
+.menu__list,.menu__list--child {
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.menu__item,.menu__item--child {
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+.PhuKien-toggle {
+    width: 10%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+
+
+.menu__item a {
+   color: black; 
+   flex: 1;
+}
+
+.menu__item + .menu__item {
+    border-top: 1px solid #E5E5E5;
+    
+}
+
+.menu__box--child  {
+    border: 1px solid #E5E5E5;
+    position: absolute;
+    top: 37px;
+    left: 11px;
+    width: 210px;
+    display: none;
+}
+
+
+.PhuKien-toggle:hover {
+    transform: rotate(-180deg);
+    transition: all 0.8s linear;
+}
+
