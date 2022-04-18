@@ -5,7 +5,7 @@ main {
     background-color: black;
 }
 .container__custom {
-    height: 5000px;
+    height: auto;
 }
 
 .mainContent {

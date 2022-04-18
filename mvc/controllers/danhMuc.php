@@ -8,9 +8,11 @@ class danhMuc extends controller{
     
     public function dongHoNam (){
         $this->select = $this->model("sanPhamModel");
+        $this->select2 = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
             "Page" => "select_page",
-            "content" => $this->select -> GetDongHoNam()
+            "content" => $this->select -> GetDongHoNam(),
+            "SLSanPham" => $this->select -> GetSLDongHoNam()
         ]);
     }
     
@@ -18,14 +20,16 @@ class danhMuc extends controller{
         $this->select = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
             "Page" => "select_page",
-            "content" => $this->select -> GetDongHoNu()
+            "content" => $this->select -> GetDongHoNu(),
+            "SLSanPham" => $this->select -> GetSLDongHoNu()
         ]);
     }
     function dongHoDoi (){
         $this->select = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
             "Page" => "select_page",
-            "content" => $this->select -> GetDongHoDoi()
+            "content" => $this->select -> GetDongHoDoi(),
+            "SLSanPham" => $this->select -> GetSLDongHoDoi()
         ]);
     }
 
@@ -33,7 +37,8 @@ class danhMuc extends controller{
         $this->select = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
             "Page" => "select_page",
-            "content" => $this->select -> GetPhuKien()
+            "content" => $this->select -> GetPhuKien(),
+            "SLSanPham" => $this->select -> GetSLPhuKien()
         ]);
     }
 

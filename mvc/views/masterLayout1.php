@@ -7,7 +7,7 @@
     <title>MasterLayout1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/partial.css">
@@ -27,6 +27,11 @@
                 <div class="mainContent col-lg-9 col-md-9">
                     <div class="row">
                         <?php require_once "./mvc/views/Pages/".$data['Page'].".php"?>
+                    </div>
+                    <div class="row pt-4">
+                        <ul class="pagination justify-content-center">
+                            <?php require_once "./mvc/views/Pages/pagination.php"?>
+                        </ul>
                     </div>
             </div>
         </div>

@@ -17,5 +17,6 @@
     <?php require_once "./partial/header.php"?>    
     <?php require_once "./mvc/views/Pages/".$data['Page'].".php"?>
     <?php require_once "./partial/footer.php" ?>
+    
 </body>   
 </html>
