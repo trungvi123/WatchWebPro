@@ -39,6 +39,12 @@
             $query = "SELECT count(id) AS SL FROM sanpham WHERE type = \"PHỤ KIỆN\"";
             return mysqli_query($this->con_sanPham,$query);
         }
+
+
+        public function GetSP($id_sp){
+            $query = "SELECT * FROM sanpham WHERE id = $id_sp ";
+            return mysqli_query($this->con_sanPham,$query);
+        }
     }
 
 ?>

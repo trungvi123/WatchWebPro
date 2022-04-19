@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/home_page.css">
 </head>
 <body>   
-    <?php require_once "./partial/header.php"?>    
+    <?php require_once "./partial/header.php"?>   
     <?php require_once "./mvc/views/Pages/".$data['Page'].".php"?>
     <?php require_once "./partial/footer.php" ?>
     

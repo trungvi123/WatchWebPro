@@ -63,7 +63,7 @@
         ?>
       </section>
 
-      <section class="row not-mr-lr service">
+      <section class="row not-ml-mr service">
         <div class="col-lg-4 service__item">
           <i class="service__icon fa-solid fa-truck"></i>
           <div class="service__content">
@@ -118,7 +118,7 @@
       </section>
 
       <section class="banner mt-5">
-        <div class="row not-mr-lr">
+        <div class="row not-ml-mr">
           <div class="col-lg-6 col-md-6 banner__item overflow-hidden position-relative p-0">
             <img class="banner__img" src="./public/img/banner/img1.jpg" alt="">
             <div class="banner__text">

@@ -12,7 +12,7 @@ class home extends controller{
             "contentNu" => $tmp -> GetDongHoNu(),
             "contentDoi" => $tmp -> GetDongHoDoi(),
             "contentPhuKien" => $tmp -> GetPhuKien(),
-            "Page" => "home_page"
+            "Page" => "home_page",
         ]); 
     }
 }
