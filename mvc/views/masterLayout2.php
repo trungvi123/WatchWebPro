@@ -42,49 +42,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script >
-        $(document).ready(function(){
-            var tab__container = $('.tab__container');
-            if(tab__container){ // Chỉ trang có tab_cont mới chạy script này
-                showTab();
-                document.querySelectorAll('.options__info-item').forEach(element => {
-                    element.onclick = function(){
-                        //xoa lua chon truoc do
-                        document.querySelector('.options__info-item.active').classList.remove('active');
-                        //them add active 
-                        element.classList.add('active');
-                        //Goi ajax tuong ung
-                        showTab();
-                    }
-                });
-                function showTab(){
-                    if(document.querySelector('.options__info-item.active.options__1')){
-                        $.get("http://localhost/WatchWebPro/mvc/views/Pages_ajax/moreInfo.php",function (data){
-                            tab__container.html(data)
-                        })
-                    }else if(document.querySelector('.options__info-item.active.options__2')){
-                        $.get("http://localhost/WatchWebPro/mvc/views/Pages_ajax/feedback.php",function (data){
-                            tab__container.html(data)
-                        })
-                    }else if(document.querySelector('.options__info-item.active.options__3')){
-                        $.get("http://localhost/WatchWebPro/mvc/views/Pages_ajax/baohanh.php",function (data){
-                            tab__container.html(data)
-                        })
-                    }else {
-                        $.post("http://localhost/WatchWebPro/mvc/views/Pages_ajax/moreInfo.php",function (data){
-                            tab__container.html(data)
-                        })
-                    }
-                }
-                document.querySelectorAll('.star__list-item').forEach(function (item){
-                    item.onclick = function (){
-                        document.querySelector('.star__list-item.active').classList.remove('active');
-                        item.classList.add('active');
-                    }
-                });
-            }
-        })
-        
-
-    </script>
+    <script src="http://localhost/WatchWebPro/public/js/tabs.js">//Xử lí các tabs</script>
 </html>

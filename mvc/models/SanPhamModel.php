@@ -41,8 +41,12 @@
         }
 
 
-        public function GetSP($id_sp){
-            $query = "SELECT * FROM sanpham WHERE id = $id_sp ";
+        public function GetSpByName($select){
+            $query = "SELECT * FROM sanpham WHERE name = \"$select\" ";
+            return mysqli_query($this->con_sanPham,$query);
+        }
+        public function GetSpById($select){
+            $query = "SELECT * FROM sanpham WHERE id = $select";
             return mysqli_query($this->con_sanPham,$query);
         }
     }

@@ -1,5 +1,4 @@
 
-
 <main>
 <!-- Trang này là nội dung main của trang index -->
     <div id="demo" class="carousel slide" data-ride="carousel">
@@ -37,21 +36,24 @@
       <section class="row">
         <?php 
           while($row = mysqli_fetch_array($data['contentNam'])){
+          //Sử lí khi không có old_price và fotmat lại price
+          if($row['old_price']!=0){
+              $old_price = number_format($row['old_price'])."đ";
+          }else {
+              $old_price = "";
+          }
+          $new_price = number_format($row['new_price'])."đ";
           echo "
           <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+          </a>
             <div class=\"product__info\">
               <p class=\"type\">{$row['type']}</p>
-              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <a class=\"product__name hiden-text\" href=\"http://localhost/WatchWebPro/sanPham/showSanPhamByName/".$row['name']."\">{$row['name']}</a>
               <div class=\"price__box\">
-              ";
-                if($row['old_price']!= NULL){
-                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
-                }else {
-                  echo "<span class=\"old__price\"></span>";
-                }
-          echo " 
-                <span class=\"new__price\">{$row['new_price']} đ</span>
+                <span class=\"old__price\">$old_price</span>
+                <span class=\"new__price\">$new_price</span>
               </div>
             </div>
             <div class=\"add_cart\">
@@ -89,23 +91,26 @@
       
     <h2 class="h2_title">ĐỒNG HỒ NỮ</h2>
       <section class="row">
-        <?php 
+      <?php 
           while($row = mysqli_fetch_array($data['contentNu'])){
+          //Sử lí khi không có old_price và fotmat lại price
+          if($row['old_price']!=0){
+              $old_price = number_format($row['old_price'])."đ";
+          }else {
+              $old_price = "";
+          }
+          $new_price = number_format($row['new_price'])."đ";
           echo "
           <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+          </a>
             <div class=\"product__info\">
               <p class=\"type\">{$row['type']}</p>
-              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <a class=\"product__name hiden-text\" href=\"http://localhost/WatchWebPro/sanPham/showSanPhamByName/".$row['name']."\">{$row['name']}</a>
               <div class=\"price__box\">
-              ";
-                if($row['old_price']!= NULL){
-                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
-                }else {
-                  echo "<span class=\"old__price\"></span>";
-                }
-          echo " 
-                <span class=\"new__price\">{$row['new_price']} đ</span>
+                <span class=\"old__price\">$old_price</span>
+                <span class=\"new__price\">$new_price</span>
               </div>
             </div>
             <div class=\"add_cart\">
@@ -141,23 +146,26 @@
 
       <h2 class="h2_title">ĐỒNG HỒ ĐÔI</h2>
       <section class="row">
-        <?php 
+      <?php 
           while($row = mysqli_fetch_array($data['contentDoi'])){
+          //Sử lí khi không có old_price và fotmat lại price
+          if($row['old_price']!=0){
+              $old_price = number_format($row['old_price'])."đ";
+          }else {
+              $old_price = "";
+          }
+          $new_price = number_format($row['new_price'])."đ";
           echo "
           <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+          </a>
             <div class=\"product__info\">
               <p class=\"type\">{$row['type']}</p>
-              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <a class=\"product__name hiden-text\" href=\"http://localhost/WatchWebPro/sanPham/showSanPhamByName/".$row['name']."\">{$row['name']}</a>
               <div class=\"price__box\">
-              ";
-                if($row['old_price']!= NULL){
-                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
-                }else {
-                  echo "<span class=\"old__price\"></span>";
-                }
-          echo " 
-                <span class=\"new__price\">{$row['new_price']} đ</span>
+                <span class=\"old__price\">$old_price</span>
+                <span class=\"new__price\">$new_price</span>
               </div>
             </div>
             <div class=\"add_cart\">
@@ -171,23 +179,26 @@
 
       <h2 class="h2_title">PHỤ KIỆN</h2>
       <section class="row">
-        <?php 
+      <?php 
           while($row = mysqli_fetch_array($data['contentPhuKien'])){
+          //Sử lí khi không có old_price và fotmat lại price
+          if($row['old_price']!=0){
+              $old_price = number_format($row['old_price'])."đ";
+          }else {
+              $old_price = "";
+          }
+          $new_price = number_format($row['new_price'])."đ";
           echo "
           <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
+          </a>
             <div class=\"product__info\">
               <p class=\"type\">{$row['type']}</p>
-              <a class=\"product__name hiden-text\" href=\"\">{$row['name']}</a>
+              <a class=\"product__name hiden-text\" href=\"http://localhost/WatchWebPro/sanPham/showSanPhamByName/".$row['name']."\">{$row['name']}</a>
               <div class=\"price__box\">
-              ";
-                if($row['old_price']!= NULL){
-                  echo "<span class=\"old__price\">{$row['old_price']}đ</span>";
-                }else {
-                  echo "<span class=\"old__price\"></span>";
-                }
-          echo " 
-                <span class=\"new__price\">{$row['new_price']} đ</span>
+                <span class=\"old__price\">$old_price</span>
+                <span class=\"new__price\">$new_price</span>
               </div>
             </div>
             <div class=\"add_cart\">
