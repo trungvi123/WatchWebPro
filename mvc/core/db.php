@@ -1,5 +1,5 @@
 <?php 
-    class db_sanPham {
+    class db {
         public $con_sanPham;
         protected $serverName = "localhost";
         protected $userName = "root";

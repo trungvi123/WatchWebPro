@@ -1,5 +1,5 @@
 <?php 
-    class SanPhamModel extends db_sanPham {
+    class SanPhamModel extends db {
         public function GetDongHoNam(){
             $query = "SELECT * FROM sanpham WHERE type = \"ĐỒNG HỒ NAM\" ";
             return mysqli_query($this->con_sanPham,$query);
