@@ -210,23 +210,4 @@
         ?>
       </section>
 
-      <h2 class="h2_title">THÔNG TIN HỮU ÍCH</h2>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 product__box">
-          <img class="product__img" src="./public/img/product/dongho_louis_erard.jpg" alt="">
-          <div class="product__info">
-            <p class="type">Đồng hồ nam</p>
-            <a class="product__name hiden-text" href="">ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA</a>
-            <div class="price__box">
-              <span class="old__price">20,000,000 đ</span>
-              <span class="new__price">18,195,000 đ</span>
-            </div>
-          </div>
-          <div class="add_cart">
-            <a href=""><i class="add_cart__icon fa-solid fa-cart-plus"></i></a>
-            
-          </div>
-        </div>
-      </div>
-
 </main>
