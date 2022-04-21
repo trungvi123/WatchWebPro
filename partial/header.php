@@ -1,8 +1,7 @@
-<header>
-        <nav class="nav">
+   <nav class="nav">
             <img class="logo" src="http://localhost/WatchWebPro/public/img/logo/Logo_main.png" alt="logo">
             <ul class="nav__list">
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/gioithieu"> GIỚI THIỆU </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/gioiThieu"> GIỚI THIỆU </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNu"> ĐỒNG HỒ NỮ </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> ĐỒNG HỒ ĐÔI </a> </li>
@@ -27,4 +26,3 @@
                 </i>
             </div>
         </nav>
-</header>

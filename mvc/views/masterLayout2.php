@@ -23,7 +23,10 @@
         <div class="container__custom">
             <div class="row">
                 <div class="sideBar col-lg-3 col-md-3">
-                        <?php require_once "./partial/sideBar.php"?>
+                        <?php 
+                        
+                        require_once "./partial/sideBar.php"
+                        ?>
                 </div>
                 <div class="mainContent col-lg-9 col-md-9">
                     <div class="row">

@@ -2,7 +2,7 @@
     // file này chủ yếu xử lí url và chạy hàm chính xác vs url
     class app {
         protected $controller ="home";
-        protected $action="defauAction";
+        protected $action="defaultAction";
         protected $params=[];
 
         function __construct(){
@@ -43,8 +43,9 @@
             }
             // hàm này để xác định chạy hàm nào
            // call_user_func_array(["tên lớp","tên hàm muốn chạy"],"tham số truyền vào hàm")
-             
+            
             call_user_func_array([$this->controller,$this->action],$this->params);
+
         }
         
         function url_handle(){

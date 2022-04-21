@@ -1,6 +1,6 @@
 <?php
 class home extends controller{
-    public function defauAction(){
+    public function defaultAction(){
         $this->showSanPham();
         // Khi ng dùng k nhập url
     }

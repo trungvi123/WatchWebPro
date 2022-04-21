@@ -27,38 +27,16 @@
                             <div class="small-line"></div>
                             <div class="menu__box">
                                 <ul class="menu__list">
-                                    <li class="menu__item">
-                                        <a href=""> Casio </a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> Citizen </a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> G-Shock & Baby-G </a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> Louis Erard</a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> Olym Pianus - Olympia Star </a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> Orient </a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> Seiko </a>
-                                        <span>(số)</span>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href=""> Tissot </a>
-                                        <span>(số)</span>
-                                    </li>
+                                    <?php
+                                    while($row = mysqli_fetch_array($data2['brand'])){
+                                        $tmp = mysqli_fetch_array($data2[$row['brand']]);
+                                        echo "
+                                            <li class=\"menu__item\">
+                                                <a href=\"\"> {$row['brand']} </a>
+                                                <span>({$tmp['SL']})</span>
+                                            </li>";
+                                    }
+                                    ?>
                                 </ul>
                             </div>
                         </aside>

@@ -45,8 +45,20 @@
             $query = "SELECT * FROM sanpham WHERE name = \"$select\" ";
             return mysqli_query($this->con_sanPham,$query);
         }
+
         public function GetSpById($select){
             $query = "SELECT * FROM sanpham WHERE id = $select";
+            return mysqli_query($this->con_sanPham,$query);
+        }
+
+
+        public function GetSLByBrand($brand){ 
+            $query = "SELECT count(id) AS SL FROM sanpham WHERE brand = \"$brand\"";
+            return mysqli_query($this->con_sanPham,$query);
+        }
+
+        public function GetBrand(){
+            $query = "SELECT distinct brand FROM sanpham";
             return mysqli_query($this->con_sanPham,$query);
         }
     }

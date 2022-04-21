@@ -9,7 +9,8 @@
             require_once "./mvc/views/".$view.".php";
         }
 
+        public function view2($view2 , $data2){
+            require_once "./partial/".$view2 .".php";
+        }
     }
-
-
 ?>

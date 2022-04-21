@@ -23,7 +23,7 @@
                   <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
                 </div>
             </div>
-                                        ";
+            ";
         }
         
 ?>                    

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    console.log("hi");
     var tab__container = $('.tab__container');
    if(tab__container){ // Chỉ trang có tab_cont mới chạy script này
        document.querySelectorAll('.options__info-item').forEach(element => {
@@ -23,5 +24,16 @@ $(document).ready(function(){
                }
            }
        });
+
+        document.querySelectorAll('.star__list-item').forEach(function(element){
+            element.onclick = function (){
+                document.querySelector('.star__list-item.active').classList.remove('active');
+                element.classList.add('active');
+            }
+        });
+
+
+
+
    }
 })

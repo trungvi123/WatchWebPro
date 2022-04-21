@@ -13,8 +13,9 @@ ul {
 main {
     padding-top: 100px;
 }
+
 .nav {
-    background-color: black;
+    background-color: black !important;
 }
 .container__custom {
     height: auto;

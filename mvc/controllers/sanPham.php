@@ -1,6 +1,6 @@
 <?php
 class sanPham extends controller{
-    public function defauAction(){
+    public function defaultAction(){
     }
 
     public function showSanPhamById ($select){
@@ -19,4 +19,6 @@ class sanPham extends controller{
             "Page" => "product_detail",
         ]); 
     }
+
+    
 }
