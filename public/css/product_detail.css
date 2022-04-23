@@ -139,3 +139,12 @@
 }
 
 
+@media only screen and (max-width: 768px){
+    .sideBar {
+        display: none !important;
+    }
+    .mainContent {
+        border-left: none;
+    }
+}
+

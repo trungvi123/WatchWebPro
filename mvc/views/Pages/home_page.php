@@ -66,21 +66,21 @@
       </section>
 
       <section class="row not-ml-mr service">
-        <div class="col-lg-4 service__item">
+        <div class="col-lg-4 col-md-6 service__item">
           <i class="service__icon fa-solid fa-truck"></i>
           <div class="service__content">
             <h3>Miễn Phí Giao Hàng</h3>
             <p>Giao hàng trên toàn đất nước</p>
           </div>
         </div>
-        <div class="col-lg-4 service__item">
+        <div class="col-lg-4 col-md-6 service__item">
           <i class="service__icon fa-solid fa-gift"></i>
-          <div class="service__content">
+          <div class="service__content ">
             <h3>Quà Tặng Đặt Biệt</h3>
             <p>Giao hàng trên toàn đất nước</p>
           </div>
         </div>
-        <div class="col-lg-4 service__item">
+        <div class="col-lg-4 col-md-6 service__item">
           <i class="service__icon fa-solid fa-piggy-bank"></i>
           <div class="service__content">
             <h3>Tiết Kiệm Khi Mua Ở LV-Group</h3>

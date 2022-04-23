@@ -161,10 +161,6 @@ header {
 
 /*************************************************************/
 
-main {
-    height: auto;
-}
-
 .carousel-control-prev {
     visibility: hidden;
     opacity: 0;
@@ -230,14 +226,47 @@ main {
      margin-left: 0 !important;
 }
 
-.footer {
-    background-color: black;
+
+/* ---------------------------------------FOOTER----------------------------------- */
+.about {
+    display: flex;
+    justify-content: center;
+}
+.contact__box {
+    height: 35px;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 20px;
+  
 }
 
+.footer__input{
+    outline: none;
+    border: none;
+    width: 86%;
+    height: 100%;
+    border-radius: 20px;
+}
 
-
-
-
-
-
-
+.arrow_icon {
+    flex: 1;
+    height: 100%;
+    
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_icon:hover {
+    background-color: #9FA4A4;
+    cursor: pointer;
+}
+.contact {
+    font-size: 14px;
+}
+.foot__item {
+    padding: 5px 20px;
+}
+.foot__item + .foot__item{
+    border-left: 1px dotted #9FA4A4;
+}

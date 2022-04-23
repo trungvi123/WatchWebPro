@@ -7,6 +7,7 @@
     }else {
       $old_price = "";
     }
+    
     $new_price = number_format($row['new_price'])."đ";
     //Xuất ra màn hình
     echo "<div class=\"main__detail row not-ml-mr\">
@@ -108,7 +109,7 @@
                   <div class=\"tab_feedback  pb-5\">
                           <h4>Hãy là người đầu tiên nhận xét “{$row['name']}”</h4>
                           <p>Đánh giá của bạn</p>
-                          <ul class=\"star__list\">
+                          <ul class=\"star__list text-center\">
                             <li class=\"star__list-item\">
                               <i class=\"fa-solid star-icon fa-star\"></i>
                             </li>

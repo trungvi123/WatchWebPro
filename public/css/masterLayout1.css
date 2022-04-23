@@ -10,13 +10,6 @@ ul {
     list-style: none !important;
 }
 
-main {
-    padding-top: 100px;
-}
-
-.nav {
-    background-color: black !important;
-}
 .container__custom {
     height: auto;
 }

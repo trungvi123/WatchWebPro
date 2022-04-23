@@ -1,12 +1,12 @@
 <?php 
     class db {
-        public $con_sanPham;
+        public $conn;
         protected $serverName = "localhost";
         protected $userName = "root";
         protected $passWord = "";
         protected $dbName = "lv_group";
         function __construct(){
-            $this->con_sanPham = mysqli_connect($this->serverName,$this->userName,$this->passWord,$this->dbName);
+            $this->conn = mysqli_connect($this->serverName,$this->userName,$this->passWord,$this->dbName);
         }
     }
 ?> 

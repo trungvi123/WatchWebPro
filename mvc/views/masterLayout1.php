@@ -16,12 +16,15 @@
 </head>
 <body>
     <header>
-        <?php require_once "./partial/header.php"?>    
+        <nav class="nav bg-dark position-static">  
+            <?php require_once "./partial/header.php"?>  
+        </nav>
     </header>
     <main>
         <div class="container__custom">
             <div class="row">
                 <div class="sideBar col-lg-3 col-md-3">
+                     
                         <?php require_once "./partial/sideBar.php"?>
                 </div>
                 <div class="mainContent col-lg-9 col-md-9">
@@ -38,7 +41,7 @@
         </div>
     </main>
 </body>
-    <footer class="footer text-white p-5">
+    <footer class="footer text-white p-5 bg-dark">
         <?php require_once "./partial/footer.php" ?>
     </footer>
     

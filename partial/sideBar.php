@@ -28,8 +28,8 @@
                             <div class="menu__box">
                                 <ul class="menu__list">
                                     <?php
-                                    while($row = mysqli_fetch_array($data2['brand'])){
-                                        $tmp = mysqli_fetch_array($data2[$row['brand']]);
+                                    while($row = mysqli_fetch_array($data['brand'])){
+                                        $tmp = mysqli_fetch_array($data[$row['brand']]);
                                         echo "
                                             <li class=\"menu__item\">
                                                 <a href=\"\"> {$row['brand']} </a>

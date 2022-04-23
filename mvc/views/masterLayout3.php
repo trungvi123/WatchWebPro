@@ -14,14 +14,18 @@
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/partial.css">
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/home_page.css">
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/gioiThieu_page.css">
+    <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/lienHe_page.css">
 </head>
 <body>   
-    <header class="bg-dark">
-        <?php require_once "./partial/header.php"?> 
+    <header >
+        <nav class="nav bg-dark position-static">  
+            <?php require_once "./partial/header.php"?>  
+        </nav>
     </header>
-      
     <?php require_once "./mvc/views/Pages/".$data['Page'].".php"?>
-    <?php require_once "./partial/footer.php" ?>
-    
+
+    <footer class="footer text-white p-5 bg-dark">
+        <?php require_once "./partial/footer.php" ?>
+    </footer>
 </body>   
 </html>

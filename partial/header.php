@@ -1,5 +1,6 @@
-   <nav class="nav">
-            <img class="logo" src="http://localhost/WatchWebPro/public/img/logo/Logo_main.png" alt="logo">
+            <a href="http://localhost/WatchWebPro/">
+              <img class="logo" src="http://localhost/WatchWebPro/public/img/logo/Logo_main.png" alt="logo">
+            </a>
             <ul class="nav__list">
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/gioiThieu"> GIỚI THIỆU </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a> </li>
@@ -7,14 +8,14 @@
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> ĐỒNG HỒ ĐÔI </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/PhuKien"> PHỤ KIỆN </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/contact"> LIÊN HỆ </a> </li>
+                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/lienHe"> LIÊN HỆ </a> </li>
             </ul>
             <div class="nav__box-icon">
                 <i class="custom__dropdown nav__icon fa-solid fa-magnifying-glass">
                     <div class="custom__dropdown-menu custom__search">
                       <div class="custom__dropdown-items">
                         <input class="custom__dropdown-item" type="text">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass "></i>
                       </div>
                     </div>
                 </i>
@@ -25,4 +26,3 @@
                   </div>
                 </i>
             </div>
-        </nav>

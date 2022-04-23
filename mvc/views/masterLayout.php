@@ -16,10 +16,14 @@
 </head>
 <body>   
     <header>
-        <?php require_once "./partial/header.php"?>   
+        <nav class="nav">  
+            <?php require_once "./partial/header.php"?>  
+        </nav>  
     </header>
     <?php require_once "./mvc/views/Pages/".$data['Page'].".php"?>
-    <?php require_once "./partial/footer.php" ?>
+    <footer class="footer text-white p-5 bg-dark">
+        <?php require_once "./partial/footer.php" ?>
+    </footer>
     
 </body>   
 </html>
