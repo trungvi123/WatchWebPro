@@ -48,11 +48,11 @@
         }
 
         //Sửa sản phẩm
-        public function editSp(){
+        public function editSp($choose){
             $tmp = $this->model("SanPhamModel");
             $this->view("masterLayout3",[
                 "Page" => "editSp_page",
-                
+                "content" => $tmp -> GetSpById($choose),
             ]);
         }
 

@@ -38,7 +38,11 @@
                                 
                                   <!-- Modal Header -->
                                   <div class=\"modal-header\">
-                                    <h4 class=\"modal-title\">Siri cảnh báo!!!</h4>
+                                    <div class=\"d-flex align-items-center\">
+                                      <img width=\"80px\" src=\"https://www.pngkit.com/png/full/153-1531841_-nh-anime-girl-halloween.png\" alt=\"\">
+                                      <h4 class=\"modal-title ml-3\">Siri cảnh báo!!!</h4>
+                                    </div>
+                                    
                                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>
                                   </div>
                                   
@@ -60,13 +64,9 @@
                                 </div>
                               </div>
                             </div>
-                        
-                        
-                           
                     </td>
                 </tr>";
             }
-           
         ?>
     </tbody>
   </table>
