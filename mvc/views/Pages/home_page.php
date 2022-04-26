@@ -35,6 +35,7 @@
     <h2 class="h2_title">ĐỒNG HỒ NAM</h2>
       <section class="row">
         <?php 
+        
           while($row = mysqli_fetch_array($data['contentNam'])){
           //Sử lí khi không có old_price và fotmat lại price
           if($row['old_price']!=0){

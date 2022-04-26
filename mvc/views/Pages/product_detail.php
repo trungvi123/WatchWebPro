@@ -10,6 +10,9 @@
     
     $new_price = number_format($row['new_price'])."đ";
     //Xuất ra màn hình
+    if(!$row['mo_ta']){
+      $row['mo_ta'] = "";
+    }
     echo "<div class=\"main__detail row not-ml-mr\">
             <div class=\"img__box col-lg-6\">
               <img class=\"img__detail\"
@@ -21,7 +24,8 @@
               <div class=\"small-line\"></div>
               <span class=\"old__price\">{$old_price}</span>
               <span class=\"new_price\">{$new_price}</span>
-              <p class=\"text__info pt-3\">{$row['mo_ta']}</p>
+              <p class=\"text__info pt-3\">
+              {$row['mo_ta']}</p>
               <div class=\"pb-3\">
                 <input class=\"quanlity__input mr-3\" min=0 max=999 type=\"number\">
                 <input type=\"button\" class=\"btn__AddSp\" value=\"THÊM VÀO GIỎ\">

@@ -12,7 +12,7 @@
     </thead>
     <tbody>
         <?php
-            while($row = mysqli_fetch_array($data['content'])){
+            $row = mysqli_fetch_array($data['content']);
                 //Sử lí khi không có old_price và fotmat lại price
                 if($row['old_price']!=0){
                     $old_price = number_format($row['old_price'])."đ";
@@ -66,7 +66,7 @@
                             </div>
                     </td>
                 </tr>";
-            }
+            
         ?>
     </tbody>
   </table>

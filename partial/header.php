@@ -19,7 +19,16 @@
                       </div>
                     </div>
                 </i>
-                <i class="nav__icon fa-solid fa-user"></i>
+
+                <div class="dropdown">
+                  <i class="nav__icon fa-solid fa-user" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu text-center">
+                      <li class="pt-2 btn btn-primary w-75"><a href="http://localhost/WatchWebPro/register" class="text-white">Đăng ký</a></li>
+                      <li class="m-2 btn btn-success w-75"><a href="http://localhost/WatchWebPro/login" class="text-white">Đăng nhập</a></li>
+                      <li class="pb-2 btn btn-dark w-75"><a href="#" class="text-white">Đăng xuất</a></li>
+                  </ul>
+                </div>
+                
                 <i class=" custom__dropdown nav__icon fa-solid fa-bag-shopping">
                   <div class="custom__dropdown-menu custom__cart">
                       <span class="custom__dropdown-text" >Chưa có sản phẩm nào trong giỏ hàng</span>

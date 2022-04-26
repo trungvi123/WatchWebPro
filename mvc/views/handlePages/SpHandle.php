@@ -1,7 +1,6 @@
 <?php
-    
-    
-    $conn = mysqli_connect("localhost","root","","lv_group");
+    $conn = $data2['connect'];
+
     if(isset($_POST['handle']) && $_POST['handle']=="ADD"){
         $name = $_POST['name'];
         $img_source = $_POST['img_source'];
@@ -19,7 +18,9 @@
                         VALUE('".$name."','".$type."','".$old_price."','".$new_price."','".$brand."','".$img_source."',
                         '".$watch_chain."','".$glass_type."','".$shape."','".$mo_ta."') ";
        mysqli_query($conn,$query);
+
        header('Location: http://localhost/WatchWebPro/admin/addSp');
+
     }else if(isset($_POST['handle']) && $_POST['handle']=="DELETE"){
         if(isset($_POST['idDelete'])){
             $idDelete = $_POST['idDelete'];
@@ -28,5 +29,10 @@
             header('Location: http://localhost/WatchWebPro/admin/quanLySanPham');
         }
     }
+
+
+
+
+    
 
 ?>

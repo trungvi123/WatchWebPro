@@ -1,5 +1,9 @@
 <?php 
     class SanPhamModel extends db {
+        public function GetConnect(){
+            return $this->conn;
+        }
+
         public function GetAllSp(){
             $query = "SELECT * FROM sanpham";
             return mysqli_query($this->conn,$query);
@@ -70,6 +74,11 @@
             $query = "SELECT distinct brand FROM sanpham";
             return mysqli_query($this->conn,$query);
         }
+
+
+
+
+
     }
 
 ?>

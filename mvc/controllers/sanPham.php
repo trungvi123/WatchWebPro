@@ -16,7 +16,7 @@ class sanPham extends controller{
             "Casio" => $this->select -> GetSLByBrand("Casio"),
             "Citizen" => $this->select -> GetSLByBrand("Citizen"),
             "G-Shock & Baby-G" => $this->select -> GetSLByBrand("G-Shock & Baby-G"),
-            "Louis Erard" => $this->select -> GetSLByBrand("Louis Erard"),
+            "Louis erard" => $this->select -> GetSLByBrand("Louis erard"),
             "Olympia Star" => $this->select -> GetSLByBrand("Olympia Star"),
             "Orient" => $this->select -> GetSLByBrand("Orient"),
             "Seiko" => $this->select -> GetSLByBrand("Seiko"),

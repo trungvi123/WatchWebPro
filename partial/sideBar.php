@@ -28,13 +28,16 @@
                             <div class="menu__box">
                                 <ul class="menu__list">
                                     <?php
-                                    while($row = mysqli_fetch_array($data['brand'])){
-                                        $tmp = mysqli_fetch_array($data[$row['brand']]);
-                                        echo "
-                                            <li class=\"menu__item\">
-                                                <a href=\"\"> {$row['brand']} </a>
-                                                <span>({$tmp['SL']})</span>
-                                            </li>";
+                                    if(mysqli_fetch_array($data['brand'])){
+                                        // 1 số sp bị xóa -> không có dữ liệu -> k in
+                                        while($row = mysqli_fetch_array($data['brand'])){
+                                                $tmp = mysqli_fetch_array($data[$row['brand']]);
+                                                    echo "
+                                                        <li class=\"menu__item\">
+                                                            <a href=\"\"> {$row['brand']} </a>
+                                                            <span>({$tmp['SL']})</span>
+                                                        </li>";
+                                    }
                                     }
                                     ?>
                                 </ul>
@@ -48,19 +51,19 @@
                                 <ul class="menu__list">
                                     <li class="menu__item">
                                         <a href=""> Dây Da </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                     <li class="menu__item">
                                         <a href=""> Dây Kim Loại </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                     <li class="menu__item">
                                         <a href=""> Dây Nhựa / Cao Su </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                     <li class="menu__item">
                                         <a href=""> Dây Vải</a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                 </ul>
                             </div>
@@ -73,11 +76,11 @@
                                 <ul class="menu__list">
                                     <li class="menu__item">
                                         <a href=""> Kính Cứng </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                     <li class="menu__item">
                                         <a href=""> Kính Sapphire </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                 </ul>
                             </div>
@@ -90,15 +93,15 @@
                                 <ul class="menu__list">
                                     <li class="menu__item">
                                         <a href=""> Kinetic (Vừa Pin – Vừa Tự Động) </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                     <li class="menu__item">
                                         <a href=""> Năng Lượng Ánh Sáng </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                     <li class="menu__item">
                                         <a href=""> Pin (Quartz) </a>
-                                        <span>(số)</span>
+                                        <!-- <span>(số)</span> -->
                                     </li>
                                 </ul>
                             </div>
