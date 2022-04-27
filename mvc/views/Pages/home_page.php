@@ -1,6 +1,37 @@
 
 <main>
-<!-- Trang này là nội dung main của trang index -->
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="d-flex align-items-center">
+          <img width="80px" src="https://www.pngkit.com/png/full/153-1531841_-nh-anime-girl-halloween.png" alt="">
+          <h4 class="modal-title ml-3">Xin lỗi, nhưng...</h4>
+        </div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+          Bạn vui lòng đăng nhập để có thể thêm sản phẩm vào giỏ hàng nhé!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <a href="http://localhost/WatchWebPro/login" class="btn btn-primary">Đăng Nhập</a>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!--nội dung main của trang index -->
     <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
@@ -31,7 +62,7 @@
             </a>
           
     </div>
-
+  
     <h2 class="h2_title">ĐỒNG HỒ NAM</h2>
       <section class="row">
         <?php 
@@ -58,7 +89,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
+            <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+              <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
+            </div>
             </div>
           </div>
             ";
@@ -115,7 +148,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
+              <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+                <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
+              </div>
             </div>
           </div>
             ";
@@ -170,7 +205,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
+              <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+                  <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
+              </div>
             </div>
           </div>
             ";
@@ -203,7 +240,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <a href=\"\"><i class=\"add_cart__icon fa-solid fa-cart-plus\"></i></a>
+              <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+                <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
+              </div>
             </div>
           </div>
             ";

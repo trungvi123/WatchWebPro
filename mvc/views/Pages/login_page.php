@@ -1,5 +1,5 @@
 
-<main class="pt-5 text-white" style="background-image:url(https://anhdep123.com/109-hinh-anh-phong-canh-ve-thien-nhien-dep-hung-vi/hinh-anh-phong-canh-dep/)">
+<main class="pt-5 text-white" style="background-image:url(https://anhdep123.com/109-hinh-anh-phong-canh-ve-thien-nhien-dep-hung-vi/hinh-anh-phong-canh-dep/);background-size: cover;">
 <div class="pt-5">
   <h2 class="text-center m-5">Đăng nhập</h2>
     <form action="http://localhost/WatchWebPro/login/loginHandle" class="w-50 h-50 m-auto" method="POST" enctype="multipart/form-data" id="loginForm">

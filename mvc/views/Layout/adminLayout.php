@@ -27,5 +27,9 @@
     <footer class="footer text-white p-5 bg-dark">
         <?php require_once "./partial/footer.php" ?>
     </footer>
+
+
+
+    
 </body>   
 </html>

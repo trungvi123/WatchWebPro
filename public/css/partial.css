@@ -8,6 +8,23 @@ a {
     text-decoration: none !important;
 }
 
+.circle-up {
+    bottom: 0;
+    padding: 10px;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    font-size: 3.5rem;
+    color: #9C9C9C;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.circle-up:hover {
+    color: #B63327;
+    opacity: 0.8;
+}
+
 
 html {
     --greyColor:#9FA4A4;
@@ -93,7 +110,7 @@ header {
     --top__is: 40px;
     --right__is: -100px;
     --padding__is: 25px 25px;
-    --width__is: 590px;
+    --width__is: 450px;
     --height__is: 90px;
     --top__row:-24px;
     --right__row:106px;
@@ -145,9 +162,10 @@ header {
     width: 95%;
 }
 
-.custom__dropdown-text {
+#custom__dropdown-text {
     font-size: 1rem;
     color: black;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 /*-----------------SLIDER---------------*/

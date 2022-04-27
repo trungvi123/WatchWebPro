@@ -20,8 +20,5 @@
             echo '<script>alert("Sai số điện thoại hoặc mật khẩu")</script>';
             echo '<script>window.location.href="http://localhost/WatchWebPro/login"</script>';
           }
-    
     }
-
-
 ?>

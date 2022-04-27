@@ -20,7 +20,7 @@ if(isset($_POST["dangky"])){
     
         if ($result) { // if user exists
             echo '<script>alert("Số điện thoại đã tồn tại")</script>';
-            echo '<script>window.location.href="http://localhost/WatchWebPro/registerController"</script>';
+            echo '<script>window.location.href="http://localhost/WatchWebPro/register"</script>';
         }else { 
             // $pass = md5($pwd);
             $pass = $pwd;
@@ -29,7 +29,7 @@ if(isset($_POST["dangky"])){
                 value ('".$username."','".$pass."','".$phonenumber."')
             ");
             echo'<script>alert("Bạn đã đăng ký thành công !")</script>';
-            echo '<script>window.location.href="http://localhost/WatchWebPro/loginController"</script>';
+            echo '<script>window.location.href="http://localhost/WatchWebPro/login"</script>';
         }
 }
 

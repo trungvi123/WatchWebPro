@@ -1,3 +1,15 @@
+<?php 
+if(isset($_SESSION['user'])){
+   print_r($_SESSION['user']);
+   
+
+
+
+
+
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,5 +37,8 @@
         <?php require_once "./partial/footer.php" ?>
     </footer>
     
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://localhost/WatchWebPro/public/js/home_page.js"></script>
 </body>   
 </html>
