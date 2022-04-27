@@ -51,6 +51,81 @@ header {
     display: flex;
     z-index: 1;
 }
+
+/* NAV MOBILE */
+
+.nav_bars-btn {
+    font-size:30px;
+    color: #fff;
+    line-height:100px;
+    display:none;
+}
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    animation:fadeIn linear 0.2s;
+    display: none;
+}
+.nav_mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+.nav_mobile-list{
+    margin: 24px;
+}
+.nav_mobile-list>li{
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+.nav_mobile-link{
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+.nav_mobile-close{
+    font-size: 1rem;
+    color: #666;
+    height:28px;
+    width:28px;
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+
+}
+.nav_input:checked ~ .nav_overlay{
+    display: block;
+}
+.nav_input:checked ~ .nav_mobile{
+    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown_user {
+    left: -50% !important;
+}
+
 /*-----------------NAV_LEFT---------------*/
 .logo {
     height: 100px;
@@ -155,6 +230,7 @@ header {
     display: none;
 }
 .custom__dropdown-items{
+    display: flex;
     border: 1px solid #473F5A;
     border-radius: 20px;
     height: 100%;
@@ -295,9 +371,39 @@ header {
     border-left: 1px dotted #9FA4A4;
 }
 
+.drop_menu {
+    display: none !important;
+}
 
-/* @media only screen and (max-width: 812px){
+@media only screen and (max-width: 730px){
     .nav__list {
-        display: none !important;
+        display: none;
     }
-} */
+    .nav_bars-btn {
+        display: block;
+    }
+    .custom__dropdown-menu{
+        width:300px;
+    }
+
+
+}
+@media only screen and (max-width: 1000px){
+    .foot__item {
+        border-left: none !important;
+        padding-bottom: 20px;
+    }
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_container :nth-child(1){
+        order: 1;
+    }
+    .footer_container :nth-child(2){
+        order: 3;
+    }
+    .footer_container :nth-child(3){
+        order: 2;
+    }
+}
