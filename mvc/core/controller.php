@@ -8,6 +8,7 @@
         public function view($view , $data ){
             require_once "./mvc/views/Layout/".$view.".php";
         }
+        
         public function viewForHandle($view , $data2 ){
             require_once "./mvc/views/handlePages/".$view.".php";
         }

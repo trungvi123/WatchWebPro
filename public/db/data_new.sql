@@ -88,5 +88,20 @@ create table `admin` (
 `id` int(4) not null primary key AUTO_INCREMENT, 
 `username` varchar(50) character set utf8 not null,
 `phonenumber` varchar(20) not null,
-`passwd` varchar(20) not null
+`passwd` varchar(20) not null,
+`admin_ChucVu` varchar(20) not null
 );
+
+create table `danhMuc` (
+`id` int(4) not null primary key AUTO_INCREMENT, 
+`name` varchar(50) character set utf8 not null,
+`mo_ta` varchar(20) not null,
+);
+
+INSERT INTO `danhmuc` (`id`, `name`,`mo_ta`,`link`) VALUES
+(1,'GIỚI THIỆU','',''),
+(2,'ĐỒNG HỒ NAM','',''),
+(3,'ĐỒNG HỒ NỮ','',''),
+(4,'ĐỒNG HỒ ĐÔI','',''),
+(5,'TIN TỨC','',''),
+(6,'LIÊN HỆ','','');

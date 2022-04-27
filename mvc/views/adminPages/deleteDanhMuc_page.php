@@ -1,39 +1,25 @@
 <div class="row justify-content-end">
-    <a class="btn btn-primary m-3" href="http://localhost/WatchWebPro/admin/quanLySanPham">Quản lí sản phẩm</a>
+    <a class="btn btn-primary m-3" href="http://localhost/WatchWebPro/admin/quanLyDanhMuc">Quản lí danh mục</a>
 </div>
 <table class="table text-center .table-hover mt-5">
     <thead>
       <tr>
-        <th>Tên Sản Phẩm</th>
-        <th>Hình Ảnh </th>
-        <th>Loại</th>
-        <th>Giá cũ</th>
-        <th>Giá mới</th>
-        <th>Thương hiệu</th>
-        <th>Quản lí</th>
+        <th>Tên Danh Mục</th>
+        <th>Mô Tả</th>
+        <th>Xử Lý</th>
       </tr>
     </thead>
     <tbody>
         <?php
             $row = mysqli_fetch_array($data['content']);
-                //Sử lí khi không có old_price và fotmat lại price
-                if($row['old_price']!=0){
-                    $old_price = number_format($row['old_price'])."đ";
-                }else {
-                    $old_price = "";
-                }
-                
-                $new_price = number_format($row['new_price'])."đ";
                 echo "
                 <tr>
                     <td>{$row['name']}</td>
-                    <td><img  width=\"100px\" height=\"100px\" src=\"{$row['img_source']}\" alt=\"\"></td>
-                    <td>{$row['type']}</td>
-                    <td>{$old_price}</td>
-                    <td>{$new_price}</td>
-                    <td>{$row['brand']}</td>
+                    <td>{$row['mo_ta']}</td>
                     <td class=\"d-flex\">
-                            <button class=\"btn btn-danger p-2 m-2\" data-toggle=\"modal\" data-target=\"#myModal\">DELETE</button>
+                            <div class=\"w-100 d-flex justify-content-center  \">
+                                <button class=\"btn btn-danger p-2  m-2\" data-toggle=\"modal\" data-target=\"#myModal\">DELETE</button>
+                            </div>
                             <!-- The Modal -->
                             <div class=\"modal\" id=\"myModal\">
                               <div class=\"modal-dialog\">
@@ -57,7 +43,7 @@
                                   
                                   <!-- Modal footer -->
                                   <div class=\"modal-footer\">
-                                  <form action=\"http://localhost/WatchWebPro/admin/SpHandle\" method=\"POST\">
+                                  <form action=\"http://localhost/WatchWebPro/admin/danhMucHandle\" method=\"POST\">
                                         <input class=\"d-none \" value=\"{$row['id']}\" type=\"text\" name=\"idDelete\">
                                         <input type=\"submit\" class=\"btn btn-danger p-2 m-2 text-white\" name=\"handle\" data-toggle=\"modal\" data-target=\"#myModal\" value=\"DELETE\">
                                         <button type=\"button\" class=\"btn p-2 m-2 btn-primary\" data-dismiss=\"modal\">Đóng</button>

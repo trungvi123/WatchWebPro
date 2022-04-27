@@ -7,7 +7,7 @@ $row = mysqli_fetch_array($data['content']);
 echo "
 <div class=\"ml-5 mr-5 pl-5 pr-5 justify-content-center\">
     <table class=\"table text-center\">
-           <form class=\"form_add mb-3\" action=\"http://localhost/WatchWebPro/admin/handle\" method=\"POST\">
+           <form class=\"form_add mb-3\" action=\"http://localhost/WatchWebPro/admin/SpHandle\" method=\"POST\">
             <tr class=\"form__row\">
                 <th>Tên Sản Phẩm</th>
                 <td>

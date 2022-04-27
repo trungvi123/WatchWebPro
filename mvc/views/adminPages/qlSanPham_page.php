@@ -4,15 +4,15 @@
 
 <table class="table text-center .table-hover mt-5">
     <thead>
-      <tr>
-        <th>Tên Sản Phẩm</th>
-        <th>Hình Ảnh </th>
-        <th>Loại</th>
-        <th>Giá cũ</th>
-        <th>Giá mới</th>
-        <th>Thương hiệu</th>
-        <th>Quản lí</th>
-      </tr>
+        <tr>
+            <th>Tên Sản Phẩm</th>
+            <th>Hình Ảnh </th>
+            <th>Loại</th>
+            <th>Giá cũ</th>
+            <th>Giá mới</th>
+            <th>Thương hiệu</th>
+            <th>Quản lí</th>
+        </tr>
     </thead>
     <tbody>
         <?php

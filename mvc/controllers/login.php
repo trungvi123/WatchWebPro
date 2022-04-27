@@ -7,7 +7,7 @@ class login extends controller{
     public function showLogin(){
         $this->view("masterLayout3",[
             "Page" => "login_page",
-        ]); 
+    ]); 
     }
 
     public function loginHandle(){
