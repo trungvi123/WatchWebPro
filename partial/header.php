@@ -18,26 +18,45 @@
                   <?php 
                     if(isset($_SESSION['user'])){
                       echo "<span class=\"userName\">{$_SESSION['user']['username']}</span>";
+                    }else if(isset($_SESSION['AdUser'])){
+                      echo "<span class=\"userName\">{$_SESSION['AdUser']['username']}</span>";
                     }
                   ?>
                   <ul class="dropdown-menu text-center">
-                      <li class="pt-2 btn btn-primary w-75"><a href="http://localhost/WatchWebPro/register" class="text-white">Đăng ký</a></li>
-                      <li class="m-2 btn btn-success w-75"><a href="http://localhost/WatchWebPro/login" class="text-white">Đăng nhập</a></li>
-                      <li class="pb-2 btn btn-dark w-75"><a href="#" class="text-white">Đăng xuất</a></li>
+                    <?php 
+                      if(isset($_SESSION['AdUser']) && isset($_SESSION['AdUser']['admin_ChucVu'])){
+                        echo "
+                        <li class=\"m-1 btn btn-primary w-75\"><a href=\"http://localhost/WatchWebPro/register\" class=\"text-white\">Đăng ký</a></li>
+                        <li class=\"m-1 btn btn-success w-75\"><a href=\"http://localhost/WatchWebPro/login\" class=\"text-white\">Đăng nhập</a></li>
+                        <li class=\"m-1 btn btn-dark w-75\"><a href=\"http://localhost/WatchWebPro/admin/quanLy\" class=\"text-white\">Quản Lý</a></li>
+                        <li class=\"m-1 btn btn-dark w-75\"><a href=\"http://localhost/WatchWebPro/logout\" class=\"text-white\">Đăng xuất</a></li>
+                        ";
+                      }elseif(isset($_SESSION['user'])){
+                        echo "
+                        <li class=\"m-1 btn btn-primary w-75\"><a href=\"http://localhost/WatchWebPro/register\" class=\"text-white\">Đăng ký</a></li>
+                        <li class=\"m-1 btn btn-success w-75\"><a href=\"http://localhost/WatchWebPro/login\" class=\"text-white\">Đăng nhập</a></li>
+                        <li class=\"m-1 btn btn-dark w-75\"><a href=\"http://localhost/WatchWebPro/logout\" class=\"text-white\">Đăng xuất</a></li>
+                        ";
+                      }else {
+                        echo "
+                        <li class=\"m-1 btn btn-primary w-75\"><a href=\"http://localhost/WatchWebPro/register\" class=\"text-white\">Đăng ký</a></li>
+                        <li class=\"m-1 btn btn-success w-75\"><a href=\"http://localhost/WatchWebPro/login\" class=\"text-white\">Đăng nhập</a></li>
+                        ";
+                      }
+                    ?>
                   </ul>
                 </div>
 
-                <i class="custom__dropdown nav__icon fa-solid fa-magnifying-glass">
+                  <i class="custom__dropdown nav__icon fa-solid fa-magnifying-glass">
                     <div class="custom__dropdown-menu custom__search">
                       <div class="custom__dropdown-items">
-                        <input class="custom__dropdown-item" type="text">
-                        <i class="fa-solid fa-magnifying-glass "></i>
+                        <input class="custom__dropdown-item search__input" type="text">
+                          <i class="fa-solid fa-magnifying-glass search__icon"></i>
                       </div>
                     </div>
                 </i>
-
-
                 
+          
                 <i class=" custom__dropdown nav__icon fa-solid fa-bag-shopping">
                   <div class="custom__dropdown-menu custom__cart">
                       <span id="custom__dropdown-text" >Chưa có sản phẩm nào trong giỏ hàng</span>

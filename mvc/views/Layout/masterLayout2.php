@@ -22,6 +22,7 @@
         </nav>    
     </header>
     <main>
+        <a href="#slider"><i class="far fa-arrow-alt-circle-up circle-up"></i></a>
         <div class="container__custom">
             <div class="row">
                 <div class="sideBar col-lg-3 col-md-3">
@@ -47,4 +48,5 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="http://localhost/WatchWebPro/public/js/tabs.js">//Xử lí các tabs</script>
+    <script src="http://localhost/WatchWebPro/public/js/partial.js"></script>
 </html>

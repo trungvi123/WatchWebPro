@@ -21,6 +21,7 @@
         </nav>
     </header>
     <main>
+        <a href="#slider"><i class="far fa-arrow-alt-circle-up circle-up"></i></a>
         <div class="container__custom">
             <div class="row">
                 <div class="sideBar col-lg-3 col-md-3">
@@ -44,5 +45,5 @@
     <footer class="footer text-white p-5 bg-dark">
         <?php require_once "./partial/footer.php" ?>
     </footer>
-    
+    <script src="http://localhost/WatchWebPro/public/js/partial.js"></script>
 </html>

@@ -75,9 +75,19 @@
             return mysqli_query($this->conn,$query);
         }
 
-
-
-
+        public function SearchSp($detail){
+            $query = "SELECT id FROM sanphamus
+            WHERE brand LIKE \"%$detail%\"
+            OR name LIKE \"%$detail%\"
+            OR type LIKE \"%$detail%\"
+            OR watch_chain LIKE \"%$detail%\"
+            OR glass_type LIKE \"%$detail%\"
+            OR color LIKE \"%$detail%\"
+            OR shape LIKE \"%$detail%\"
+            OR mo_ta LIKE \"%$detail%\"
+            ";
+            return mysqli_query($this->conn,$query);
+        }
 
     }
 

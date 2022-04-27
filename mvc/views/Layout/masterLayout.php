@@ -1,15 +1,4 @@
-<?php 
-if(isset($_SESSION['user'])){
-   print_r($_SESSION['user']);
-   
 
-
-
-
-
-
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +21,7 @@ if(isset($_SESSION['user'])){
             <?php require_once "./partial/header.php"?>  
         </nav>  
     </header>
+    <a href="#slider"><i class="far fa-arrow-alt-circle-up circle-up"></i></a>
     <?php require_once "./mvc/views/Pages/".$data['Page'].".php"?>
     <footer class="footer text-white p-5 bg-dark">
         <?php require_once "./partial/footer.php" ?>
@@ -40,5 +30,6 @@ if(isset($_SESSION['user'])){
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="http://localhost/WatchWebPro/public/js/home_page.js"></script>
+    <script src="http://localhost/WatchWebPro/public/js/partial.js"></script>
 </body>   
 </html>

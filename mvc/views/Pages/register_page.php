@@ -21,7 +21,7 @@
             <input type="password" class="form-control" placeholder="" name="rpwd" id="rpwd">
         </div>
 		<div class="form-group form-check">
-			<div class="col-sm-5 offset-sm-4">
+			<div class="">
 				<input class="form-check-input" type="checkbox" id="agree" name="agree" value="agree" />
 				<label class="form-check-label" for="agree">Đồng ý các quy định của chúng tôi</label>
 			</div>

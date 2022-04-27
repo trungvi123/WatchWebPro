@@ -5,6 +5,10 @@
             return mysqli_query($this->conn, $query);
         }
 
+        public function GetAdmin(){
+            $query = "select * from admin ";
+            return mysqli_query($this->conn, $query);
+        }
 
 
     }

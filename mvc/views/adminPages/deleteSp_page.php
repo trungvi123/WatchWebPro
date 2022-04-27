@@ -1,3 +1,6 @@
+<div class="row justify-content-end">
+    <a class="btn btn-primary m-3" href="http://localhost/WatchWebPro/admin/quanLySanPham">Quản lí sản phẩm</a>
+</div>
 <table class="table text-center .table-hover mt-5">
     <thead>
       <tr>
@@ -55,7 +58,7 @@
                                   <!-- Modal footer -->
                                   <div class=\"modal-footer\">
                                   <form action=\"http://localhost/WatchWebPro/admin/handle\" method=\"POST\">
-                                        <input class=\"d-none \" value=\"{$row['id']}\" type=\"text\" name=\"idDelete\" >
+                                        <input class=\"d-none \" value=\"{$row['id']}\" type=\"text\" name=\"idDelete\">
                                         <input type=\"submit\" class=\"btn btn-danger p-2 m-2 text-white\" name=\"handle\" data-toggle=\"modal\" data-target=\"#myModal\" value=\"DELETE\">
                                         <button type=\"button\" class=\"btn p-2 m-2 btn-primary\" data-dismiss=\"modal\">Đóng</button>
                                     </form>  

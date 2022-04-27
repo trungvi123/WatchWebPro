@@ -94,8 +94,36 @@ class danhMuc extends controller{
         $this->view("masterLayout1",[
             "Page" => "select_page",
             "content" => $this->select -> GetPhuKien(),
-            "SLSanPham" => $this->select -> GetSLPhuKien(),
+            "SLSanPham" => $this->select -> GetSLPhuKien(), // tạm
             
+            // giải pháp tạm thời, chưa suy nghĩ ra cách để ngắn gọn hơn
+            "brand" => $this->select -> GetBrand(),
+            "Casio" => $this->select -> GetSLByBrand("Casio"),
+            "Citizen" => $this->select -> GetSLByBrand("Citizen"),
+            "G-Shock & Baby-G" => $this->select -> GetSLByBrand("G-Shock & Baby-G"),
+            "Louis Erard" => $this->select -> GetSLByBrand("Louis Erard"),
+            "Olympia Star" => $this->select -> GetSLByBrand("Olympia Star"),
+            "Orient" => $this->select -> GetSLByBrand("Orient"),
+            "Seiko" => $this->select -> GetSLByBrand("Seiko"),
+            "Tissot" => $this->select -> GetSLByBrand("Tissot"),
+            "Pianus" => $this->select -> GetSLByBrand("Pianus"),
+            "Ogival" => $this->select -> GetSLByBrand("Ogival"),
+            "Candino" => $this->select -> GetSLByBrand("Candino"),
+            "Skagen" => $this->select -> GetSLByBrand("Skagen"),
+            "Wellington" => $this->select -> GetSLByBrand("Wellington"),
+            "Sunrise SG" => $this->select -> GetSLByBrand("Sunrise SG"),
+            "ZRC" => $this->select -> GetSLByBrand("ZRC"),
+            "Alexandre Christie" => $this->select -> GetSLByBrand("Alexandre Christie"),
+        ]); 
+    }
+
+    public function Search($detail="đồng hồ"){
+        $this->select = $this->model("sanPhamModel");
+        $this->view("masterLayout1",[
+            "Page" => "select_page",
+            "contentSearch" => $this->select -> SearchSp($detail), // trả về các id sp trùng khớp
+            "SLSanPham" => $this->select -> GetSLPhuKien(),
+            "content" => $this->select -> GetAllSp(),
             // giải pháp tạm thời, chưa suy nghĩ ra cách để ngắn gọn hơn
             "brand" => $this->select -> GetBrand(),
             "Casio" => $this->select -> GetSLByBrand("Casio"),

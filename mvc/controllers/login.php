@@ -15,7 +15,8 @@ class login extends controller{
         $this->viewForHandle("loginHandle",[ 
             // layout này trực tiếp xử lí dữ liệu và đưa vào session, nếu thông qua trang 
             // con sẽ bị lỗi vì có nhiều lệnh đứng trước session
-            "content" => $tmp -> GetThanhVien(),
+            "contentTV" => $tmp -> GetThanhVien(),
+            "contentAD" => $tmp -> GetAdmin(),
         ]);
     }
 

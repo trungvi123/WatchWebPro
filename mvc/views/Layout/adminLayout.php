@@ -22,6 +22,7 @@
             <?php require_once "./partial/header.php"?>  
         </nav>
     </header>
+    <a href="#slider"><i class="far fa-arrow-alt-circle-up circle-up"></i></a>
     <?php require_once "./mvc/views/adminPages/".$data['Page'].".php"?>
 
     <footer class="footer text-white p-5 bg-dark">
@@ -30,6 +31,6 @@
 
 
 
-    
+    <script src="http://localhost/WatchWebPro/public/js/partial.js"></script>
 </body>   
 </html>
