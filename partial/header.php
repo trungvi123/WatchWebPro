@@ -1,6 +1,59 @@
+            
+             <!-- nav mobile -->
+             <label for="nav_mobile-input" class="nav_bars-btn">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+
+              <input type="checkbox" hidden class="nav_input" id="nav_mobile-input">
+              
+              <label for="nav_mobile-input" class="nav_overlay"></label>
+              
+              <nav class="nav_mobile">
+
+                <label for="nav_mobile-input" class="nav_mobile-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+
+                <ul class="nav_mobile-list">
+                  <li>
+                    <a class="nav_mobile-link" href="http://localhost/WatchWebPro/gioiThieu"> GIỚI THIỆU </a>
+                    
+                    </li>
+                    <li>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a>
+
+                    </li>
+                    <li>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNu"> ĐỒNG HỒ NỮ </a>
+
+                    </li>
+                    <li>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> ĐỒNG HỒ ĐÔI </a>
+
+                    </li>
+                    <li>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/danhMuc/PhuKien"> PHỤ KIỆN </a>
+
+                    </li>
+                    <li>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a>
+
+                    </li>
+                    <li>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/lienHe"> LIÊN HỆ </a>
+
+                    </li>
+                  </ul>
+                    
+          </nav>
+            <!-- end nav mobile -->
+
+            
             <a href="http://localhost/WatchWebPro/">
               <img class="logo" src="http://localhost/WatchWebPro/public/img/logo/Logo_main.png" alt="logo">
             </a>
+
+
             <ul class="nav__list">
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/gioiThieu"> GIỚI THIỆU </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a> </li>
@@ -10,9 +63,9 @@
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a> </li>
                 <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/lienHe"> LIÊN HỆ </a> </li>
             </ul>
+
             <div class="nav__box-icon">
                 
-
                 <div class="dropdown">
                   <i class="nav__icon fa-solid fa-user" data-toggle="dropdown"></i>
                   <?php 
@@ -22,7 +75,7 @@
                       echo "<span class=\"userName\">{$_SESSION['AdUser']['username']}</span>";
                     }
                   ?>
-                  <ul class="dropdown-menu text-center">
+                  <ul class="dropdown-menu text-center dropdown_user">
                     <?php 
                       if(isset($_SESSION['AdUser']) && isset($_SESSION['AdUser']['admin_ChucVu'])){
                         echo "

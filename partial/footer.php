@@ -1,6 +1,7 @@
 
-            <div class="row">
-                <div class="col-sm-4 foot__item col-lg-3">
+            <div class="row footer_container">
+
+                <div class="foot__item col-lg-3">
                     <div class="support">
                         <ul >
                             <li class="list-unstyled"><h5>HỖ TRỢ KHÁCH HÀNG</h5></li>
@@ -11,7 +12,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4 foot__item col-lg-6">
+
+                <div class="foot__item col-lg-6">
                     <div class="about">
                         <img class="logo m-auto" src="http://localhost/WatchWebPro/public/img/logo/Logo_main.png" alt="logo">
                     </div>
@@ -23,10 +25,9 @@
                         </div>
                         
                     </div>
-                    
-                    
                 </div>
-                <div class="col-sm-4 foot__item col-lg-3">
+
+                <div class="foot__item col-lg-3">
                     <div class="contact">
                         <ul>
                             <li class="list-unstyled"><h5>THÔNG TIN LIÊN HỆ</h5></li>
