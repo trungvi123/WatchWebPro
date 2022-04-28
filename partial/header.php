@@ -110,11 +110,11 @@
                     </div>
                 </i>
                 
-                <a href="http://localhost/WatchWebPro/cart">
+                <a href="http://localhost/WatchWebPro/cart/cart">
                   <i class=" custom__dropdown nav__icon fa-solid text-white fa-bag-shopping">
-                    <div class="custom__dropdown-menu custom__cart">
-                        <span id="custom__dropdown-text" >Chưa có sản phẩm nào trong giỏ hàng</span>
-                    </div>
+                    <!-- <div class="custom__dropdown-menu custom__cart">
+                        <span id="custom__dropdown-text">Chưa có sản phẩm nào trong giỏ hàng</span>
+                    </div> -->
                   </i>
                 </a>
                 

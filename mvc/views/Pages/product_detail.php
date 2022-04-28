@@ -1,4 +1,4 @@
-<?php
+<?php 
   //chắc chắn chỉ có 1 sản phẩm trong content nên không cần dung while
   $row = mysqli_fetch_array($data['content']);
   //Sử lí khi không có old_price và fotmat lại price
@@ -28,7 +28,7 @@
               {$row['mo_ta']}</p>
               <div class=\"pb-3\">
                 <input class=\"quanlity__input mr-3\" min=0 max=999 type=\"number\">
-                <input type=\"button\" class=\"btn__AddSp\" value=\"THÊM VÀO GIỎ\">
+                <a href=\"http://localhost/WatchWebPro/cart/store/{$row['id']}\" class=\"btn__AddSp text-white p-2\">THÊM VÀO GIỎ</a>
               </div>
               <p class=\"small text-secondary\">Mã: {$row['id']}</p>
               <a class=\"type_sp small text-secondary\">Danh mục: {$row['type']}</a>

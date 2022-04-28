@@ -27,6 +27,14 @@
     text-decoration: line-through;
 }
 /*-------------------------------Product-----------------------------------*/
+.alert {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    z-index: 99999;
+}
+
+
 
 .row {
     margin: 20px !important;

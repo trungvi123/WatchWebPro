@@ -31,5 +31,6 @@
         <?php require_once "./partial/footer.php" ?>
     </footer>
     <script src="http://localhost/WatchWebPro/public/js/partial.js"></script>
+    <script src="http://localhost/WatchWebPro/public/js/cart.js"></script>
 </body>   
 </html>

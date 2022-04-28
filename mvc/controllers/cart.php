@@ -2,12 +2,18 @@
     class cart extends controller{
         function defaultAction(){
         }
+
+        function cart(){
+            $this->view("masterLayout3",[
+                "Page" => "cart_page",
+            ]); 
+        }
         function store($id){
             $tmp=$this->model('sanPhamModel');
             $product = mysqli_fetch_assoc($tmp->GetSpById($id));
             
             //   unset($_SESSION['cart']);
-            if(empty($_SESSION['cart']) || !array_key_exists($id,$_SESSION['cart']) ){
+            if(empty($_SESSION['cart']) || !array_key_exists($id,$_SESSION['cart']) || empty($_SESSION['cart'][$id])){
             // neu gio hang rong hoac sp do ch co trang gio hang thi them moi
                 $product['quantity'] = 1;
                 $_SESSION['cart'][$id] = $product;
@@ -24,10 +30,19 @@
 
             $this->view("masterLayout3",[
                 "Page" => "cart_page",
-                "content" =>  $_SESSION['cart'],
             ]); 
 
-        }   
+        }
+
+        function delete($id){
+            $_SESSION['cart'][$id] = [];
+            $this->view("masterLayout3",[
+                "Page" => "cart_page",
+            ]); 
+        }
+        
+
+
 
     }
 

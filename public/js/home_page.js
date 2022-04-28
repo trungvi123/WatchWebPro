@@ -20,6 +20,9 @@ btn__model.forEach(function (elm){
             elm.setAttribute("data-toggle","modal");
         }else {
             elm.setAttribute("data-toggle","");
+            elm.preventDefault();
+
+
         }
     }
 })
