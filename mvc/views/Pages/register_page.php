@@ -2,7 +2,7 @@
 
 <main class="pt-5 text-white w-100" style="background-image:url(./public/img/bg/pexels-andy-vu-3244513.jpg); background-size: cover;">
 <div class="pt-5">
-  <h2 class="text-center m-5">Đăng ký thành viên</h2>
+  <h2 class="text-center mb-2">Đăng ký thành viên</h2>
     <form action="http://localhost/WatchWebPro/register/registerHandle" class="w-50 h-50 m-auto" method="POST" enctype="multipart/form-data" id="signupForm">
         <div class="form-group">
           <label for="email">Tên đăng nhập</label>
