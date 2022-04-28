@@ -14,7 +14,7 @@ create table `sanpham` (
 `colorSearch` varchar(50) character set utf8, 
 `shape` varchar(50) character set utf8,
 `shapeSearch` varchar(50) character set utf8,
-`mo_ta` varchar(50) character set utf8
+`mo_ta` varchar(255) character set utf8
 );
 
 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/gioiThieu_page.css">
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/lienHe_page.css">
     <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/cart.css">
+    <link rel="stylesheet" href="http://localhost/WatchWebPro/public/css/news_page.css">
 </head>
 <body>   
     <header >

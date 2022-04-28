@@ -36,7 +36,7 @@
 
                     </li>
                     <li>
-                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a>
+                      <a class="nav_mobile-link" href="http://localhost/WatchWebPro/news"> TIN TỨC </a>
 
                     </li>
                     <li>
