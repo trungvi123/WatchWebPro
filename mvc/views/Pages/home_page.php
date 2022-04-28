@@ -22,7 +22,7 @@
       <!-- Modal footer -->
       <div class="modal-footer">
         <a href="http://localhost/WatchWebPro/login" class="btn btn-primary">Đăng Nhập</a>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Thoát</button>
       </div>
 
     </div>
@@ -76,7 +76,7 @@
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
-          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <div class=\"col-lg-3 col-md-4 col-sm-6 col-6 product__box\">
           <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
           </a>
@@ -89,9 +89,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-            <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
-              <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
-            </div>
+              <a href=\"http://localhost/WatchWebPro/cart/store/{$row['id']}\" class=\"btn__model\" data-toggle=\"modal\" data-target=\"#myModal\">
+                <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
+              </a> 
             </div>
           </div>
             ";
@@ -135,7 +135,7 @@
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
-          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <div class=\"col-lg-3 col-md-4 col-sm-6 col-6 product__box\">
           <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
           </a>
@@ -148,9 +148,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+              <a href=\"http://localhost/WatchWebPro/cart/store/{$row['id']}\" class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
                 <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
-              </div>
+              </a>
             </div>
           </div>
             ";
@@ -192,7 +192,7 @@
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
-          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <div class=\"col-lg-3 col-md-4 col-6 col-sm-6 product__box\">
           <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
           </a>
@@ -205,9 +205,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+              <a href=\"http://localhost/WatchWebPro/cart/store/{$row['id']}\" class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
                   <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
-              </div>
+              </a>
             </div>
           </div>
             ";
@@ -227,7 +227,7 @@
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
-          <div class=\"col-lg-3 col-md-4 col-sm-6 product__box\">
+          <div class=\"col-lg-3 col-md-4 col-6 col-sm-6 product__box\">
           <a href=\"http://localhost/WatchWebPro/sanPham/showSanPhamById/".$row['id']."\">
             <img class=\"product__img\" src=\"{$row['img_source']}\" alt=\"\">
           </a>
@@ -240,9 +240,9 @@
               </div>
             </div>
             <div class=\"add_cart\">
-              <div class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
+              <a href=\"http://localhost/WatchWebPro/cart/store/{$row['id']}\" class=\"btn__model\"  data-toggle=\"modal\" data-target=\"#myModal\">
                 <i class=\"add_cart__icon fa-solid fa-cart-plus\"></i>
-              </div>
+              </a >
             </div>
           </div>
             ";

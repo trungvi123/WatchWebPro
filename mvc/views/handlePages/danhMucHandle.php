@@ -25,8 +25,8 @@
             $query = "DELETE FROM danhMuc WHERE id = \"$idEdit\" ";
             mysqli_query($conn,$query);
 
-            $query2 = "INSERT INTO danhMuc(name,mo_ta) 
-            VALUE('".$name."','".$mo_ta."')";
+            $query2 = "INSERT INTO danhMuc(name,mo_ta,id) 
+            VALUE('".$name."','".$mo_ta."','".$idEdit."')";
             mysqli_query($conn,$query2);
             header('Location: http://localhost/WatchWebPro/admin/quanLyDanhMuc');
          }

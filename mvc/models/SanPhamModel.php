@@ -76,14 +76,14 @@
         }
 
         public function SearchSp($detail){
-            $query = "SELECT id FROM sanphamus
+            $query = "SELECT * FROM sanpham
             WHERE brand LIKE \"%$detail%\"
             OR name LIKE \"%$detail%\"
-            OR type LIKE \"%$detail%\"
-            OR watch_chain LIKE \"%$detail%\"
+            OR typeSearch LIKE \"%$detail%\"
+            OR watch_chainSearch LIKE \"%$detail%\"
             OR glass_type LIKE \"%$detail%\"
-            OR color LIKE \"%$detail%\"
-            OR shape LIKE \"%$detail%\"
+            OR colorSearch LIKE \"%$detail%\"
+            OR shapeSearch LIKE \"%$detail%\"
             OR mo_ta LIKE \"%$detail%\"
             ";
             return mysqli_query($this->conn,$query);

@@ -1,7 +1,7 @@
             
              <!-- nav mobile -->
              <label for="nav_mobile-input" class="nav_bars-btn">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars bar__icon"></i>
               </label>
 
               <input type="checkbox" hidden class="nav_input" id="nav_mobile-input">
@@ -55,13 +55,14 @@
 
 
             <ul class="nav__list">
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/gioiThieu"> GIỚI THIỆU </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNam"> ĐỒNG HỒ NAM </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoNu"> ĐỒNG HỒ NỮ </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/dongHoDoi"> ĐỒNG HỒ ĐÔI </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/danhMuc/PhuKien"> PHỤ KIỆN </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/new"> TIN TỨC </a> </li>
-                <li class="nav__list-item"><a class="nav__list-link" href="http://localhost/WatchWebPro/lienHe"> LIÊN HỆ </a> </li>
+              <?php
+                    $conn = mysqli_connect("localhost","root",'',"lv_group");
+                    $query = "select * from danhMuc";
+                    $tmp = mysqli_query($conn,$query);
+                    while($row = mysqli_fetch_array($tmp)){
+                      echo "<li class=\"nav__list-item\"><a class=\"nav__list-link\" href=\"{$row['mo_ta']}\"> {$row['name']} </a> </li>";
+                    }
+              ?>
             </ul>
 
             <div class="nav__box-icon">
@@ -109,10 +110,12 @@
                     </div>
                 </i>
                 
-          
-                <i class=" custom__dropdown nav__icon fa-solid fa-bag-shopping">
-                  <div class="custom__dropdown-menu custom__cart">
-                      <span id="custom__dropdown-text" >Chưa có sản phẩm nào trong giỏ hàng</span>
-                  </div>
-                </i>
+                <a href="http://localhost/WatchWebPro/cart">
+                  <i class=" custom__dropdown nav__icon fa-solid text-white fa-bag-shopping">
+                    <div class="custom__dropdown-menu custom__cart">
+                        <span id="custom__dropdown-text" >Chưa có sản phẩm nào trong giỏ hàng</span>
+                    </div>
+                  </i>
+                </a>
+                
             </div>

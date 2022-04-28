@@ -1,0 +1,29 @@
+.coupon {
+    display: flex;
+    flex-direction: column !important;
+   
+}
+.input__coupon {
+    height: 35px;
+    padding: 10px;
+}
+
+.apply__coupon {
+    height: 35px;
+}
+
+.oder__block {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.back__input {
+    padding: 10px;
+    background-color: azure;
+}
+
+.update__input {
+    padding: 10px;
+    background-color: azure;
+}

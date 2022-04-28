@@ -69,6 +69,7 @@ header {
     background-color: rgba(0,0,0,0.5);
     animation:fadeIn linear 0.2s;
     display: none;
+    z-index: 99;
 }
 .nav_mobile{
     position: fixed;
@@ -80,6 +81,7 @@ header {
     background-color: #fff;
     transform: translateX(-100%);
     transition: transform linear 0.2s;
+    z-index: 99999;
 }
 .nav_mobile-list{
     margin: 24px;
@@ -111,6 +113,11 @@ header {
 }
 .nav_input:checked ~ .nav_mobile{
     transform: translateX(0);
+}
+
+.bar__icon {
+    font-size: 20px;
+    padding: 10px 8px;
 }
 
 @keyframes fadeIn {
@@ -166,6 +173,10 @@ header {
     color: white;
 }
 
+.search__icon {
+    margin-top: 3px;
+}
+
 .nav__icon {
     padding: 8px 12px;
 }
@@ -182,6 +193,8 @@ header {
     position: relative;
 
 }
+
+
 
 .custom__dropdown:hover .custom__dropdown-menu {
     display: block;
@@ -221,13 +234,14 @@ header {
     position: absolute;
     top: var(--top__is);
     background-color: white; 
-     border-radius: 10px;
+    border-radius: 10px;
     border: 3px solid var(--hoverColor);
     right: var(--right__is);
     width: var(--width__is);
     height: var(--height__is);
     padding: var(--padding__is);
     display: none;
+    z-index: 99;
 }
 .custom__dropdown-items{
     display: flex;
@@ -375,7 +389,7 @@ header {
     display: none !important;
 }
 
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 934px){
     .nav__list {
         display: none;
     }
@@ -385,9 +399,18 @@ header {
     .custom__dropdown-menu{
         width:300px;
     }
-
-
+    .carousel-item img {
+        height: 400px;
+    }
 }
+
+@media only screen and (min-width: 934px) and (max-width: 1040px){
+    .custom__dropdown-menu::before {
+        border-color: transparent  transparent #E2BA48 transparent ;
+    }
+}
+
+
 @media only screen and (max-width: 1000px){
     .foot__item {
         border-left: none !important;

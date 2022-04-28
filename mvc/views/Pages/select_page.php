@@ -1,4 +1,4 @@
-<?php 
+<?php
      while($row = mysqli_fetch_array($data['content'])){
         if($row['old_price']!=0){
             $old_price = number_format($row['old_price'])."đ";

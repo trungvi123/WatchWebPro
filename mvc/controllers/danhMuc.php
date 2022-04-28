@@ -117,13 +117,14 @@ class danhMuc extends controller{
         ]); 
     }
 
-    public function Search($detail="đồng hồ"){
+    public function Search($detail){
         $this->select = $this->model("sanPhamModel");
         $this->view("masterLayout1",[
             "Page" => "select_page",
-            "contentSearch" => $this->select -> SearchSp($detail), // trả về các id sp trùng khớp
+            "content" => $this->select -> SearchSp($detail), // trả về các id sp trùng khớp
             "SLSanPham" => $this->select -> GetSLPhuKien(),
-            "content" => $this->select -> GetAllSp(),
+
+            
             // giải pháp tạm thời, chưa suy nghĩ ra cách để ngắn gọn hơn
             "brand" => $this->select -> GetBrand(),
             "Casio" => $this->select -> GetSLByBrand("Casio"),
