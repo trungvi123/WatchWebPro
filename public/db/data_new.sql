@@ -69,5 +69,5 @@ INSERT INTO `danhmuc` (`id`, `name`,`mo_ta`) VALUES
 (3,'ĐỒNG HỒ NỮ','http://localhost/WatchWebPro/dongHoNu'),
 (4,'ĐỒNG HỒ ĐÔI','http://localhost/WatchWebPro/dongHoDoi'),
 (5,'PHỤ KIỆN','http://localhost/WatchWebPro/phuKien'),
-(6,'TIN TỨC','http://localhost/WatchWebPro/tinTuc'),
+(6,'TIN TỨC','http://localhost/WatchWebPro/news'),
 (7,'LIÊN HỆ','http://localhost/WatchWebPro/lienHe');
