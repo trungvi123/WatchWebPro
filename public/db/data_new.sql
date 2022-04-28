@@ -25,7 +25,7 @@ create table `sanphamUS` (
 `glass_type` varchar(100) character set utf8, 
 `color` varchar(50) character set utf8, 
 `shape` varchar(50) character set utf8,
-`mo_ta` varchar(50) character set utf8
+`mo_ta` varchar(255) character set utf8
 );
 
 INSERT INTO `sanphamUS` (`id`, `name`, `type`, `old_price`, `new_price`, `img_source`, `brand`, `watch_chain`, `glass_type`, `color`, `shape`) VALUES
