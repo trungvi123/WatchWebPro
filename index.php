@@ -12,7 +12,6 @@
     - mstLayout1 là Layout có thêm sideBar
     - mstLayout2 là Layout dạng khác của mstLayout1
     - mstLayout3 giống mstLayout nhưng nav nền đen
-    -handleLayout xử lí dữ liêu và đưa vào session
-
+    - adminLayout danh cho admin
 
  -->

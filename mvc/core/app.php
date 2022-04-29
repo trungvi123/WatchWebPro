@@ -23,7 +23,7 @@
                 // không có arr[0]cũng require trang $controller mặc định
                 require_once("./mvc/controllers/".$this->controller.".php");
             }
-            
+            //tạo ra đối tượng 
             $this->controller = new $this->controller;
 
             // Xu li action

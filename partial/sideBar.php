@@ -37,7 +37,7 @@
                                                             <a href=\"\"> {$row['brand']} </a>
                                                             <span>({$tmp['SL']})</span>
                                                         </li>";
-                                    }
+                                        }
                                     }
                                     ?>
                                 </ul>

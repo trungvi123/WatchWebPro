@@ -43,7 +43,7 @@
                       <a class="nav_mobile-link" href="http://localhost/WatchWebPro/lienHe"> LIÊN HỆ </a>
 
                     </li>
-                  </ul>
+                </ul>
                     
           </nav>
             <!-- end nav mobile -->
