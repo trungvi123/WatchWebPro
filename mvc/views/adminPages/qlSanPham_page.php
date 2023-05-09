@@ -18,11 +18,11 @@
         <?php
             while($row = mysqli_fetch_array($data['contentAll'])){
                 //Sử lí khi không có old_price và fotmat lại price
-                if($row['old_price']!=0){
-                    $old_price = number_format($row['old_price'])."đ";
-                }else {
+                if($row['old_price'] == ''){
                     $old_price = "";
-                }
+                  }else if($row['old_price']!=0){
+                      $old_price = number_format($row['old_price'])."đ";
+                  }
                 
                 $new_price = number_format($row['new_price'])."đ";
                 echo "

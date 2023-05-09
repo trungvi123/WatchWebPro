@@ -11,7 +11,7 @@
                 break;
             }
         }
-
+        // $Adrow = mysqli_fetch_array(mysqli_query($this->conn, "select * from adminLogin"))
         while($Adrow = mysqli_fetch_array($data2['contentAD'])){ // các thông tin user
           if( ($Adrow['phonenumber'] == $phonenumber) && ($Adrow['passwd'] == $password) ){
               $result = true;

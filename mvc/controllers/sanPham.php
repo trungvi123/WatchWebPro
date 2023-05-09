@@ -2,6 +2,8 @@
 class sanPham extends controller{
     public $select;
     public function defaultAction(){
+        header('Location: http://localhost/WatchWebPro/');
+
     }
 
     public function showSanPhamById ($choose){

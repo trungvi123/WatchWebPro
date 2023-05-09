@@ -68,8 +68,11 @@
         <?php 
         
           while($row = mysqli_fetch_array($data['contentNam'])){
+            // print_r($row);
           //Sử lí khi không có old_price và fotmat lại price
-          if($row['old_price']!=0){
+          if($row['old_price'] == ''){
+            $old_price = "";
+          }else if($row['old_price']!=0){
               $old_price = number_format($row['old_price'])."đ";
           }else {
               $old_price = "";
@@ -128,10 +131,10 @@
       <?php 
           while($row = mysqli_fetch_array($data['contentNu'])){
           //Sử lí khi không có old_price và fotmat lại price
-          if($row['old_price']!=0){
+          if($row['old_price'] == ''){
+            $old_price = "";
+          }else if($row['old_price']!=0){
               $old_price = number_format($row['old_price'])."đ";
-          }else {
-              $old_price = "";
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
@@ -187,8 +190,6 @@
           //Sử lí khi không có old_price và fotmat lại price
           if($row['old_price']!=0){
               $old_price = number_format($row['old_price'])."đ";
-          }else {
-              $old_price = "";
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
@@ -220,10 +221,10 @@
       <?php 
           while($row = mysqli_fetch_array($data['contentPhuKien'])){
           //Sử lí khi không có old_price và fotmat lại price
-          if($row['old_price']!=0){
+          if($row['old_price'] == ''){
+            $old_price = "";
+          }else if($row['old_price']!=0){
               $old_price = number_format($row['old_price'])."đ";
-          }else {
-              $old_price = "";
           }
           $new_price = number_format($row['new_price'])."đ";
           echo "
@@ -249,5 +250,5 @@
           }
         ?>
       </section>
-
+<!-- <script>alert('hihi')<script> -->
 </main>

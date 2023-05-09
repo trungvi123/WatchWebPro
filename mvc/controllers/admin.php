@@ -1,7 +1,8 @@
 <?php 
     class admin extends controller{
         function defaultAction(){
-            echo "Trang nay danh cho Admin";
+            // echo "Trang nay danh cho Admin";
+            header('Location: http://localhost/WatchWebPro/');
         }
 
 

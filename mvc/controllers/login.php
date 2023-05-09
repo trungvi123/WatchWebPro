@@ -13,8 +13,8 @@ class login extends controller{
     public function loginHandle(){
         $tmp = $this->model('loginModel');
         $this->viewForHandle("loginHandle",[ 
-            // layout này trực tiếp xử lí dữ liệu và đưa vào session, nếu thông qua trang 
-            // con sẽ bị lỗi vì có nhiều lệnh đứng trước session
+            // layout này trực tiếp xử lí dữ liệu và đưa vào session, nếu thông qua trang con
+            //  sẽ bị lỗi vì có nhiều lệnh đứng trước session
             "contentTV" => $tmp -> GetThanhVien(),
             "contentAD" => $tmp -> GetAdmin(),
         ]);

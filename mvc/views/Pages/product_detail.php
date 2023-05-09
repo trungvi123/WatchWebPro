@@ -2,11 +2,11 @@
   //chắc chắn chỉ có 1 sản phẩm trong content nên không cần dung while
   $row = mysqli_fetch_array($data['content']);
   //Sử lí khi không có old_price và fotmat lại price
-    if($row['old_price']!=0){
+  if($row['old_price'] == ''){
+    $old_price = "";
+  }else if($row['old_price']!=0){
       $old_price = number_format($row['old_price'])."đ";
-    }else {
-      $old_price = "";
-    }
+  }
     
     $new_price = number_format($row['new_price'])."đ";
     //Xuất ra màn hình

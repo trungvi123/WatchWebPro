@@ -1,6 +1,8 @@
 <?php
     class cart extends controller{
         function defaultAction(){
+            header('Location: http://localhost/WatchWebPro/');
+
         }
 
         function cart(){
